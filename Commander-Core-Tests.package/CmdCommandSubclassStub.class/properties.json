@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "CmdCommandSuperclassStub",
+	"category" : "Commander-Core-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "CmdCommandSubclassStub",
+	"type" : "normal"
+}

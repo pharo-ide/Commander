@@ -1,0 +1,3 @@
+testing
+isLastActiveItemInMenu
+	^parentGroup isLastActiveMenuItem: self

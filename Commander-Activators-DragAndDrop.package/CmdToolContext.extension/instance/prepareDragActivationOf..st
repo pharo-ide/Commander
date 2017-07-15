@@ -1,0 +1,3 @@
+*Commander-Activators-DragAndDrop
+prepareDragActivationOf: aCommand
+	aCommand prepareExecutionInDragContext: self

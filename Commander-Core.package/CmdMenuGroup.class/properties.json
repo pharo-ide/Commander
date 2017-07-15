@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "DenisKudryashov 4/11/2017 15:08",
+	"super" : "CmdMenuItem",
+	"category" : "Commander-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"contents"
+	],
+	"name" : "CmdMenuGroup",
+	"type" : "normal"
+}

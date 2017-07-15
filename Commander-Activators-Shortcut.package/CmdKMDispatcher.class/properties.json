@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "DenisKudryashov 4/3/2017 16:15",
+	"super" : "KMDispatcher",
+	"category" : "Commander-Activators-Shortcut",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "CmdKMDispatcher",
+	"type" : "normal"
+}

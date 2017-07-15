@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "CmdToolContextStub",
+	"category" : "Commander-Core-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "CmdUnusedToolContextStub",
+	"type" : "normal"
+}

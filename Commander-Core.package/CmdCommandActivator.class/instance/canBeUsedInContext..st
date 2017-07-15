@@ -1,0 +1,3 @@
+testing
+canBeUsedInContext: aToolContext
+	^aToolContext isActivationOf: activationContextClass

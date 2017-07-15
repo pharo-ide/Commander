@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "CmdRootCommandStub",
+	"category" : "Commander-Core-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "CmdCommand3StubWithoutMenu",
+	"type" : "normal"
+}

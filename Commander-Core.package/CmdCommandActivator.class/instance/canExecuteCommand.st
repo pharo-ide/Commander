@@ -1,0 +1,4 @@
+testing
+canExecuteCommand
+
+	^self canExecuteCommandInContext: actualActivationContext

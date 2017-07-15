@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "CmdToolContextStub2",
+	"category" : "Commander-Core-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "CmdToolContextExtendingStub2",
+	"type" : "normal"
+}

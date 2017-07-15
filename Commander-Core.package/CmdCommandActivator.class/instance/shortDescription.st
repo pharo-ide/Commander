@@ -1,0 +1,3 @@
+printing
+shortDescription
+	^self printString
