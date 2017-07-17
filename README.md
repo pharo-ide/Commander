@@ -30,10 +30,16 @@ For example system browser shows multiple panes which provide package context, c
 And depending on context browser shows different menu and provides different shortcuts\.
 
 ## Installation
-
 ```Smalltalk
 Metacello new
   baseline: 'Commander';
   repository: 'github://dionisiydk/Commander';
   load.
 ```
+Use following snippet for stable dependency in your project baseline:
+```Smalltalk
+spec
+    baseline: 'Commander'
+    with: [ spec repository: 'github://dionisiydk/Commander:v0.2.x' ]
+```
+
