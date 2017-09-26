@@ -8,7 +8,7 @@ testCreationNewForContext
 	newActivator := activator newActivationFor: context.
 	self deny: newActivator == activator.
 	self assert: newActivator class equals: activator class.
-	self assert: newActivator id equals: activator id.
+	self assert: newActivator declarationSelector equals: activator declarationSelector.
 	self assert: newActivator actualActivationContext equals: context.
 	
 	self deny: newActivator command = activator command.

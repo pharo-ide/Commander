@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "CmdRootCommandStub",
+	"super" : "CmdRootOfCommandExamples",
 	"category" : "Commander-Core-Tests",
 	"classinstvars" : [ ],
 	"pools" : [ ],

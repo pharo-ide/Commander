@@ -8,6 +8,6 @@
 	"instvars" : [
 		"savedParametersContext"
 	],
-	"name" : "CmdRootCommandStub",
+	"name" : "CmdRootOfCommandExamples",
 	"type" : "normal"
 }

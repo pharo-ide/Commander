@@ -1,15 +1,15 @@
 {
-	"commentStamp" : "DenisKudryashov 5/22/2017 13:01",
+	"commentStamp" : "",
 	"super" : "ClassMetaAnnotation",
 	"category" : "Commander-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
+		"activator",
 		"command",
-		"activationContextClass",
-		"actualActivationContext"
+		"context"
 	],
-	"name" : "CmdCommandActivator",
+	"name" : "CmdCommandActivation",
 	"type" : "normal"
 }
