@@ -8,7 +8,7 @@ testCreationNewForContext
 	
 	context := CmdToolContextStub new.
 	newActivator := activator newActivationFor: context.
-	self deny: newActivator = activator.
+	self deny: newActivator == activator.
 	self assert: newActivator class equals: activator class.
 	self assert: newActivator id equals: activator id.
 	self assert: newActivator actualActivationContext equals: context.
