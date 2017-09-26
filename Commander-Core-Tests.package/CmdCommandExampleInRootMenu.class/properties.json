@@ -1,13 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "CmdCommand",
+	"super" : "CmdRootCommandStub",
 	"category" : "Commander-Core-Tests",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"savedParametersContext"
-	],
-	"name" : "CmdRootCommandStub",
+	"instvars" : [ ],
+	"name" : "CmdCommandExampleInRootMenu",
 	"type" : "normal"
 }

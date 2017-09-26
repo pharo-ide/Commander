@@ -1,5 +1,5 @@
 activation
 view1ShortcutActivator
-	<commandActivator>
+	<classMetaAnnotation>
 	
-	^CmdShortcutCommandActivator by: $r meta for: CmdToolContextStub1 
+	^CmdCommandActivatorExample for: CmdToolContextStub1 

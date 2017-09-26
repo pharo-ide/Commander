@@ -1,5 +1,0 @@
-activation
-view3Activator
-	<commandActivator>
-	
-	^CmdContextMenuCommandActivator byRootGroupItemFor: CmdToolContextExtendingStub2

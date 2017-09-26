@@ -2,9 +2,7 @@ tests
 testCreationNewForContext
 
 	| activator newActivator context |
-	activator := CmdCommand1Stub activators first.
-	self assert: activator id equals: #view1Activator.
-	self assert: activator command class equals: CmdCommand1Stub.
+	activator := CmdCommand1Stub metaAnnotations anyOne.
 	
 	context := CmdToolContextStub new.
 	newActivator := activator newActivationFor: context.

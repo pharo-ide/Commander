@@ -9,4 +9,4 @@ testIteratingCommandsForContext
 		do: [:activator | activators add: activator].
 	
 	self assert: activators size equals: 1.
-	self assert: activators first commandClass equals: CmdCommand4StubInDeepMenuGroup
+	self assert: activators first commandClass equals: CmdCommandExampleInDeepMenuGroup

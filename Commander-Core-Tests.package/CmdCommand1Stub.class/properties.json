@@ -5,9 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"savedParametersContext"
-	],
+	"instvars" : [ ],
 	"name" : "CmdCommand1Stub",
 	"type" : "normal"
 }

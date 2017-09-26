@@ -10,4 +10,4 @@ testIteratingCommandsForExtendingContext
 	
 	self assert: activators size equals: 2.
 	commandClasses := activators collect: [ :each | each commandClass ] as: Set.
-	self assert: commandClasses equals: { CmdCommand1Stub. CmdCommand4StubInDeepMenuGroup } asSet
+	self assert: commandClasses equals: { CmdCommand1Stub. CmdCommandExampleInDeepMenuGroup } asSet

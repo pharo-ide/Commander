@@ -1,3 +1,3 @@
 parents
 parentGroup
-	^CmdMenuGroup2Stub 
+	^CmdMenuGroupExample2 
