@@ -2,7 +2,7 @@ tests
 testCreationNewForContext
 
 	| activator newActivator context |
-	activator := CmdCommand1Stub metaAnnotations anyOne.
+	activator := CmdCommandExampleWithThreeActivators activators anyOne.
 	
 	context := CmdToolContextStub new.
 	newActivator := activator newActivationFor: context.
@@ -12,5 +12,5 @@ testCreationNewForContext
 	self assert: newActivator actualActivationContext equals: context.
 	
 	self deny: newActivator command = activator command.
-	self assert: newActivator command class equals: CmdCommand1Stub.
+	self assert: newActivator command class equals: CmdCommandExampleWithThreeActivators.
 	self assert: newActivator command savedParametersContext equals: context

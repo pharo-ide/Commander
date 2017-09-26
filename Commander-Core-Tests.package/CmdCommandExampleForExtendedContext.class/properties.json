@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "CmdCommand3StubWithoutMenu",
+	"name" : "CmdCommandExampleForExtendedContext",
 	"type" : "normal"
 }

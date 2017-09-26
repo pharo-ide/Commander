@@ -1,5 +1,4 @@
 accessing
-activatorsFor: aToolContext do: aBlockClosure 
-	self activators 
-		select: [ :each | each canBeUsedInContext: aToolContext]
-		thenDo: aBlockClosure 
+activatorsFor: aToolContext do: aBlock 
+	self activatorsDo: [ :each | 
+		(each canBeUsedInContext: aToolContext) ifTrue: [aBlock value: each]]

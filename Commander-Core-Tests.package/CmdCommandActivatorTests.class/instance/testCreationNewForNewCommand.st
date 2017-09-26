@@ -2,7 +2,7 @@ tests
 testCreationNewForNewCommand
 
 	| activator newActivator |
-	activator := CmdCommand1Stub activators first.
+	activator := CmdCommandExampleWithThreeActivators activators anyOne.
 	newActivator := activator newForCommand: #newCommand.
 
 	self deny: newActivator == activator.

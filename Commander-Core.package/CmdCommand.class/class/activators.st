@@ -1,3 +1,3 @@
 accessing
 activators
-	^self metaAnnotations
+	^self metaAnnotations select: [ :each | each isKindOf: CmdCommandActivator ]
