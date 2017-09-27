@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "ClassMetaAnnotation",
+	"super" : "Object",
 	"category" : "Commander-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],

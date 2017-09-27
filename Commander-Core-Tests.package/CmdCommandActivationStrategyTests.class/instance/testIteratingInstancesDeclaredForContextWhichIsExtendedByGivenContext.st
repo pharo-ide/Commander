@@ -10,4 +10,4 @@ testIteratingInstancesDeclaredForContextWhichIsExtendedByGivenContext
 	
 	self assert: activators size equals: 2.
 	commandClasses := activators collect: [ :each | each commandClass ] as: Set.
-	self assert: commandClasses equals: { CmdCommandExampleWithThreeActivators. CmdCommandExampleForExtendedContext } asSet
+	self assert: commandClasses equals: { CmdCommandExampleWith3Activators. CmdCommandExampleForExtendedContext } asSet

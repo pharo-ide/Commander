@@ -1,4 +1,4 @@
 testing
 includesCommand: aCommandClass
 
-	^activator annotates: aCommandClass
+	^activator activatesCommand: aCommandClass

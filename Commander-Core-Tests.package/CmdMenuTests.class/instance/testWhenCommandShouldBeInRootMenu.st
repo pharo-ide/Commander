@@ -1,5 +1,5 @@
 tests
-testWhenCommandShouldBeRootMenu
+testWhenCommandShouldBeInRootMenu
 	| menu containingItems |
 	menu := self buildMenuInContext: CmdToolContextStub1 new.
 	

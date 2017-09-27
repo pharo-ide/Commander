@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "CmdRootOfCommandExamples",
+	"super" : "TestCase",
 	"category" : "Commander-Core-Tests",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "CmdCommandExampleWithThreeActivators",
+	"name" : "CmdCommandActivationStrategyTests",
 	"type" : "normal"
 }

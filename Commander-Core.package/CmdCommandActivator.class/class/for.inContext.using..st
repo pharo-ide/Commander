@@ -6,4 +6,5 @@ for: aCommandClass inContext: aToolContext using: aCommandActivationStrategy
 	
 	^self new 
 		command: command;
-		context: aToolContext
+		context: aToolContext;
+		activationStrategy: aCommandActivationStrategy
