@@ -2,7 +2,7 @@ tests
 testNotSimilarToAnotherActivatorForDifferentKindOfCommand
 
 	| declaredActivator activator1 activator2 context |
-	declaredActivator := CmdCommandActivatorExample for: CmdToolContextStub2.
+	declaredActivator := CmdCommandActivationExample for: CmdToolContextStub2.
 	declaredActivator annotatedClass: CmdCommandExampleWithThreeActivators.
 	context := CmdToolContextStub2 new.
 	activator1 := declaredActivator newActivatorFor: CmdToolContextStub2 new.

@@ -2,4 +2,4 @@ activation
 activatorExample1
 	<classMetaAnnotation>
 	
-	^CmdCommandActivatorExample for: CmdToolContextStub3
+	^CmdCommandActivationExample for: CmdToolContextStub3

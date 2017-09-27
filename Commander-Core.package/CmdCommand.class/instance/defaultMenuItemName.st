@@ -1,3 +1,3 @@
 accessing
 defaultMenuItemName
-	^self class name
+	^self class defaultMenuItemName

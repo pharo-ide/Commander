@@ -1,4 +1,4 @@
 testing
 canExecuteCommandInContext: aToolContext
 
-	^aToolContext allowsExecutionOf: command
+	^aToolContext allowsExecutionOf: self commandClass

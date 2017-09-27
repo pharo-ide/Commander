@@ -4,7 +4,7 @@ testIteratingInstancesDeclaredForGivenContext
 	| activators context |
 	context := CmdToolContextStub2 new.
 	activators := OrderedCollection new.
-	CmdCommandActivatorExample  
+	CmdCommandActivationExample  
 		allDeclaredFor: context
 		do: [:activator | activators add: activator].
 	

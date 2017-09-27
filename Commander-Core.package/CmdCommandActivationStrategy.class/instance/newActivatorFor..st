@@ -1,7 +1,7 @@
 activation
 newActivatorFor: aToolContext
 	
-	^self commandClass defaultActivatorClass
+	^self defaultActivatorClass
 		for: self commandClass
 		inContext: aToolContext 
 		using: self

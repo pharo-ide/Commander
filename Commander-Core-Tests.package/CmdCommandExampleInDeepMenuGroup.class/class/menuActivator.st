@@ -2,4 +2,4 @@ activation
 menuActivator
 	<classMetaAnnotation>
 	
-	^CmdMenuCommandActivatorExample byItemOf: CmdDeepChildMenuGroupStub for: CmdToolContextStub2
+	^CmdMenuCommandActivationExample byItemOf: CmdDeepChildMenuGroupStub for: CmdToolContextStub2

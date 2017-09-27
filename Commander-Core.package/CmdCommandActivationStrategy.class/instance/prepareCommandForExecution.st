@@ -1,3 +1,0 @@
-activation
-prepareCommandForExecution
-	actualActivationContext prepareFullExecutionOf: command

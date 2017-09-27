@@ -1,0 +1,4 @@
+testing
+canExecuteCommand
+
+	^activationStrategy canExecuteCommandInContext: context

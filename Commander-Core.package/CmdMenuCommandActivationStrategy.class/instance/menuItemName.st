@@ -1,3 +1,3 @@
 accessing
 menuItemName
-	^ menuItemName ifNil: [ command defaultMenuItemName ]
+	^ menuItemName ifNil: [ self commandClass defaultMenuItemName ]

@@ -2,7 +2,7 @@ tests
 buildMenuInContext: aToolContext
 	| menu |
 	menu := CmdMenu  
-		activatedBy: CmdMenuCommandActivatorExample.
+		activatedBy: CmdMenuCommandActivationExample.
 	
 	menu buildInContext: aToolContext.
 	

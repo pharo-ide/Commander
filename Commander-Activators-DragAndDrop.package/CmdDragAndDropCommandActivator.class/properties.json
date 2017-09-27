@@ -1,13 +1,12 @@
 {
-	"commentStamp" : "DenisKudryashov 4/5/2017 18:16",
-	"super" : "CmdCommandActivationStrategy",
+	"commentStamp" : "",
+	"super" : "CmdCommandActivator",
 	"category" : "Commander-Activators-DragAndDrop",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"dropContextClass",
-		"actualDropContext"
+		"dropContext"
 	],
 	"name" : "CmdDragAndDropCommandActivator",
 	"type" : "normal"
