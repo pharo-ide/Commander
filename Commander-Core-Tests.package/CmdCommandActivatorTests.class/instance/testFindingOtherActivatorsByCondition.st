@@ -4,7 +4,7 @@ testFindingOtherActivatorsByCondition
 	| activator newActivator others |
 	activator := CmdCommandExampleWithThreeActivators activators 
 		detect: [:each | each activationContextClass = CmdToolContextStub1].
-	newActivator := activator newActivationFor: CmdToolContextStub1 new.	
+	newActivator := activator newActivatorFor: CmdToolContextStub1 new.	
 		
 	others := newActivator findOtherActivatorsWhich: [ :each | 
 		each declarationSelector ~~ activator declarationSelector].

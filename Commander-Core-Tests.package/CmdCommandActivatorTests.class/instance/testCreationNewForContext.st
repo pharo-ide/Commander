@@ -5,7 +5,7 @@ testCreationNewForContext
 	activator := CmdCommandExampleWithThreeActivators activators anyOne.
 	
 	context := CmdToolContextStub new.
-	newActivator := activator newActivationFor: context.
+	newActivator := activator newActivatorFor: context.
 	self deny: newActivator == activator.
 	self assert: newActivator class equals: activator class.
 	self assert: newActivator declarationSelector equals: activator declarationSelector.

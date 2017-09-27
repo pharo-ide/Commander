@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "CmdMenuCommandActivator",
+	"super" : "CmdMenuCommandActivationStrategy",
 	"category" : "Commander-Core-Tests",
 	"classinstvars" : [ ],
 	"pools" : [ ],

@@ -1,5 +1,5 @@
-execution
-execute
+activation
+executeCommand
 
 	[self prepareCommandForExecution.
 	command execute.

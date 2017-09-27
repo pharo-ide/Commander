@@ -7,7 +7,7 @@ tryExecuteCommandInContext: aToolContext byEvents: anEventBuffer
 		
 		(keyCombination matchesCompletely: anEventBuffer)
 			ifTrue: [ KMBuffer uniqueInstance completeMatch.
-				activator := self newActivationFor: aToolContext.
+				activator := self newActivatorFor: aToolContext.
 				activator executeCommand]
 			ifFalse: [ KMBuffer uniqueInstance partialMatch].
 		^true].

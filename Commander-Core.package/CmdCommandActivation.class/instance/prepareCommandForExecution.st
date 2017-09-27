@@ -1,3 +1,0 @@
-execution
-prepareCommandForExecution
-	context prepareFullExecutionOf: command

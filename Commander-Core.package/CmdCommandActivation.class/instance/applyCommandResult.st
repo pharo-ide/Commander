@@ -1,3 +1,0 @@
-execution
-applyCommandResult
-	context applyResultOf: command

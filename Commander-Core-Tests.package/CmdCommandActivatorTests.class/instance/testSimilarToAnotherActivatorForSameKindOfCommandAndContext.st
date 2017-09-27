@@ -5,7 +5,7 @@ testSimilarToAnotherActivatorForSameKindOfCommandAndContext
 	declaredActivator := CmdCommandActivatorExample for: CmdToolContextStub2.
 	declaredActivator annotatedClass: CmdCommandExampleWithThreeActivators.
 	
-	activator1 := declaredActivator newActivationFor: CmdToolContextStub2 new.
-	activator2 := declaredActivator newActivationFor: activator1 actualActivationContext.
+	activator1 := declaredActivator newActivatorFor: CmdToolContextStub2 new.
+	activator2 := declaredActivator newActivatorFor: activator1 actualActivationContext.
 	
 	self assert:  (activator1 isSimilarTo: activator2).

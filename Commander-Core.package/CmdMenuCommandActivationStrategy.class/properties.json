@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "DenisKudryashov 4/11/2017 15:04",
-	"super" : "CmdCommandActivator",
+	"super" : "CmdCommandActivationStrategy",
 	"category" : "Commander-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
@@ -10,6 +10,6 @@
 		"menuGroup",
 		"menuItemName"
 	],
-	"name" : "CmdMenuCommandActivator",
+	"name" : "CmdMenuCommandActivationStrategy",
 	"type" : "normal"
 }

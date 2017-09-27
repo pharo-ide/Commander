@@ -1,0 +1,3 @@
+activation
+applyCommandResult
+	actualActivationContext applyResultOf: command
