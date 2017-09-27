@@ -1,3 +1,3 @@
 accessing
-activationContextClass: aToolContextClass
+contextClass: aToolContextClass
 	contextClass := aToolContextClass
