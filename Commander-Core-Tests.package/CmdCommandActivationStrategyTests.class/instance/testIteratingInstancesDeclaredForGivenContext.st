@@ -5,7 +5,7 @@ testIteratingInstancesDeclaredForGivenContext
 	context := CmdToolContextStub2 new.
 	activators := OrderedCollection new.
 	CmdCommandActivationExample  
-		allDeclaredFor: context
+		forAllCommandsInContext: context
 		do: [:activator | activators add: activator].
 	
 	self assert: activators size equals: 1.

@@ -1,8 +1,8 @@
 building
-buildCommandItemInContext: aToolContext activatingBy: aCommandActivator
+buildCommandItemInContext: aToolContext activatingBy: anActivationStrategy
 
 	| commandActivator group |
-	commandActivator := aCommandActivator newActivatorFor: aToolContext.
+	commandActivator := anActivationStrategy newActivatorFor: aToolContext.
 	
-	group := self ensureGroup: aCommandActivator menuGroup.
+	group := self ensureGroup: anActivationStrategy menuGroup.
 	group addItem: (CmdCommandMenuItem activatingBy: commandActivator)
