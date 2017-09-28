@@ -1,6 +1,6 @@
 commands enumeration
 allDeclaredFor: aToolContext do: blockWithActivator
 	
-	self declaredInstances
+	self registeredInstances
 		select: [ :each | each canBeUsedInContext: aToolContext]
 		thenDo: blockWithActivator
