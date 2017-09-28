@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "DenisKudryashov 5/22/2017 13:01",
-	"super" : "ClassMetaAnnotation",
+	"super" : "ClassAnnotation",
 	"category" : "Commander-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],

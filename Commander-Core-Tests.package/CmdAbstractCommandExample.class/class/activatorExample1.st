@@ -1,5 +1,5 @@
 activation
 activatorExample1
-	<classMetaAnnotation>
+	<classAnnotation>
 	
 	^CmdCommandActivationExample for: CmdToolContextStub3

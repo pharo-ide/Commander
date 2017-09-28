@@ -1,5 +1,5 @@
 activation
 childMenuGroupActivator1
-	<classMetaAnnotation>
+	<classAnnotation>
 	
 	^CmdMenuCommandActivationExample byItemOf: CmdMenuGroupExample1 for: CmdToolContextStub1
