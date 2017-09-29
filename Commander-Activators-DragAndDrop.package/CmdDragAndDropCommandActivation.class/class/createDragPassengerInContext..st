@@ -1,6 +1,6 @@
 passenger creation
 createDragPassengerInContext: aToolContext
 	| activators |
-	activators := self createActivatorsForExecutableCommandsInContext: aToolContext.
+	activators := self createActivatorsExecutableInContext: aToolContext.
 		
 	^CmdDragPassenger draggedFromContext: aToolContext toActivate: activators

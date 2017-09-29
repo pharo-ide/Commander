@@ -3,8 +3,7 @@ setUpShortcutTipForMenuItem: aMenuItemMorph
 	| keyText |
 	
 	CmdShortcutCommandActivation 
-		forExecutableCommands: command class 
-		inContext: context 
+		allExecutableInContext: context for: command class 
 		do: [ :shortcut |  	
 			"this is trick to show shortcut on menu with existing menu support"
 			keyText := String streamContents: [:s | 

@@ -1,8 +1,8 @@
-commands enumeration
-forExecutableCommands: aCommandClass inContext: aToolContext do: blockWithActivation
+accessing
+allExecutableInContext: aToolContext for: aCommandClass do: blockWithActivation
 
 	self 
-		forAllCommandsInContext: aToolContext 
+		allAvailableInContext: aToolContext 
 		do: [:activationStrategy |
 			((activationStrategy annotates: aCommandClass) 
 				and: [ activationStrategy canExecuteCommandInContext: aToolContext  ])
