@@ -1,3 +1,3 @@
 accessing
 activators
-	^self metaAnnotations select: [ :each | each isKindOf: CmdCommandActivationStrategy ]
+	^self classAnnotations select: [ :each | each isKindOf: CmdCommandActivationStrategy ]
