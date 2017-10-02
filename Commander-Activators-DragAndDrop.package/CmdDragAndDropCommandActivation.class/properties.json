@@ -6,7 +6,7 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"dropContextClass"
+		"dropContextDefinition"
 	],
 	"name" : "CmdDragAndDropCommandActivation",
 	"type" : "normal"

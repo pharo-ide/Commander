@@ -2,4 +2,4 @@ testing
 canBeUsedInContext: aToolContext
 	self commandClass isAbstract ifTrue: [ ^false ].
 	
-	^aToolContext isActivationOf: contextClass
+	^contextDefinition describes: aToolContext

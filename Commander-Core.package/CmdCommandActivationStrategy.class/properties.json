@@ -6,7 +6,7 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"contextClass"
+		"contextDefinition"
 	],
 	"name" : "CmdCommandActivationStrategy",
 	"type" : "normal"

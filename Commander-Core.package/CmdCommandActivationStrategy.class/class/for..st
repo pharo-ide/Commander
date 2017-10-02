@@ -1,4 +1,4 @@
 instance creation
-for: aToolContextClass
+for: contextDefinitionCompatible
 	^ self new 
-		contextClass: aToolContextClass
+		contextDefinition: contextDefinitionCompatible asCommandContextDefinition

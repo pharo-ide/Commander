@@ -3,4 +3,4 @@ isSimilarTo: anotherCommandActivator
 
 	^self class = anotherCommandActivator class 
 		and: [self commandClass = anotherCommandActivator commandClass
-			and: [contextClass = anotherCommandActivator contextClass]]
+			and: [contextDefinition = anotherCommandActivator contextDefinition]]
