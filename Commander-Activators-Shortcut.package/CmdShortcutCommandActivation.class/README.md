@@ -1,10 +1,10 @@
-I activate command by shortcut.
+I describe how access and execute command using given shortcut.
 
 Add me to commands using:
 
-	YourCommand>>yourApplicationShortcutActivator
-		<commandActivator>
-		^CmdShortcutCommandActivator by: $y meta for: YourAppContext
+	YourCommand>>yourApplicationShortcutActivation
+		<classAnnotation>
+		^CmdShortcutCommandActivation by: $y meta for: YourAppContext
 
 I also define standard shortcuts on class side for rename and remove commands:
 - renamingFor: aToolContext

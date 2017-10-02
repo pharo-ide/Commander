@@ -7,11 +7,11 @@ For example to make YourCommand executable by shortcut you need following method
 		^CmdShortcutCommandActivator by: $e meta for: YourAppContext 
 
 My instances should be created for concrete context of application tool, subclass of CmdToolContext. Application/tool provides instance of this context for the command lookup:
-	CmdShortcutCommandActivator allAvailableInContext: aToolContext do: [:activationStrategy  | ]
+	CmdShortcutCommandActivation allAvailableInContext: aToolContext do: [:activationStrategy  | ]
 This method enumerates all registered strategies which are declared to be used in given context. You can check it  manually: 
 	anActivationStrategy canBeUsedInContext: aToolContext
-There is another enumaration method to access all strategies which are really able execute commands in specified context:
-	CmdShortcutCommandActivator allExecutableInContext: aToolContext do: [:activationStrategy  | ]
+There is another enumaration method to access all strategies which are able execute commands in specified context:
+	CmdShortcutCommandActivation allExecutableInContext: aToolContext do: [:activationStrategy  | ]
 Each command defines the method which checks that given context is appropriate for command execution:
 	commandClass canBeExecutedInContext: aToolContext.
 Also you can ask the activation strategy about it:
@@ -29,49 +29,20 @@ But actual logic of these operations is implemented by command itself. So activa
 	command readParametersFromContext:  context 
 	command prepareFullExecutionInContext: context
 	command execute.
-Iinitialization logic of the command depends on the type of activation strategy. For example drag and drop activation will require two steps to prepare command:
+Initialization logic of the command depends on the type of activation strategy. For example drag and drop activation will require two steps to prepare command:
 	command prepareExecutionInDragContext: aToolContext
-First step will initialize state of command which is available from the context of drag operation.
+It will initialize the state of command which is available from the context of drag operation.
 	command prepareExecutionInDropContext: aToolContext
-And last step will initialize state of command in context of drop operation.
-For details look at CmdDragAndDropCommandActivation comment.
+It will initialize the state of command in the context of drop operation.
+
+Look at CmdCommand and CmdCommandActivator for details on these logic.
 
 I also provide simple method to work with all commands using activators prepared for the given context:
 	activationStrategyClass activateAllInContext: aToolContext by: [:activator | ]
-You can also collect all activators:
+Also you can collect all these activators:
 	activationStrategyClass creatActivatorsExecutableInContext: aToolContext
-
-
-While you can ask declared activators for such questions generally they supposed to be used only as prototypes. Declared activators create ready to use activators which keep information about current context and able to execute command. To create new instance use following expression:
-	readyActivator := declaredActivator newActivationFor: aToolContext 
-I implement convinient method to iterate only executable commands:
-	activatorClass allExecutableIn: aToolContext do: [:readyActivator | ]
-For ready activator instance I also create new instance of command with possibiity to initialize state using given context:
-	command readParametersFromContext:  aToolContext 
-		
-Look at commands comments for details on this method.
 	
-Ready activator can execute command:
-	readyActivator executeCommand
-I perform it in three steps:
-1) #prepareCommandForExecution. Command should retrieve all state required for execution from activation context. By default I ask command to prepare full execution:
-	CmdCommandActivator>>prepareCommandForExecution
-		actualActivationContext prepareExecutionOf: command  
-During preparation commands can break execution by signalling CmdCommandAborted. For example It should happen if user cancel some confirmation dialog during command preparation.
-
-2) Command execution. All logic is implemented by command itself (#execute method).
-
-3) Applying execution result to activation context. I also delegate processing to command itself:
-	CmdCommandActivator>>applyCommandResult
-		actualActivationContext applyResultOf: command  
-Idea is to be able interact with application when command completes. For example if user creates new package from browser then at the end of command browser should open created package.
- 
-For more details look at CmdCommand comments.
-
 Internal Representation and Key Implementation Points.
 
     Instance Variables
-	id:		<Symbol>
-	command:		<CmdCommand>
-	activationContextClass:		<CmdToolContext class>	activator declaration context
-	actualActivationContext:		<CmdToolContext>	active execution context
+	contextDefinition:		<CmdContextDefinition>	definition of the context where command can be activated

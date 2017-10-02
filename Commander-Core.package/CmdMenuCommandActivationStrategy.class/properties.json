@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "DenisKudryashov 4/11/2017 15:04",
+	"commentStamp" : "DenisKudryashov 10/2/2017 10:54",
 	"super" : "CmdCommandActivationStrategy",
 	"category" : "Commander-Core",
 	"classinstvars" : [ ],
