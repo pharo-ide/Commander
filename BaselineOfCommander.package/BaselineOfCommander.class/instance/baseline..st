@@ -20,6 +20,7 @@ baseline: spec
 			package: #'Commander-Core-Tests' with: [
 				spec requires: #(#'Commander-Core' #ClassAnnotationTests). ].
 		spec 
-			group: 'Core' with: #(#'Commander-Core' #'Commander-Activators-Shortcut' #'Commander-Activators-ContextMenu' #'Commander-Activators-DragAndDrop' );
+			group: 'Core' with: #(#'Commander-Core');
+			group: 'AllActivators' with: #(#'Commander-Activators-Shortcut' #'Commander-Activators-ContextMenu' #'Commander-Activators-DragAndDrop' );
 			group: 'Tests' with: #(#'Commander-Core-Tests' );
-			group: 'default' with: #('Core' 'Tests')]
+			group: 'default' with: #('Core' 'AllActivators' 'Tests')]
