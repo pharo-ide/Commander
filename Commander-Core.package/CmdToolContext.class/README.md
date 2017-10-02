@@ -1,10 +1,11 @@
 I am a root of application context hierarchy. I am bound to concrete tool (widget. element) of application.
 My subclasses provide specific information about tool/application state.
-They are used to declare command activators. Every activator is declared for concrete context class.
- 
-Instances of my subclasses are used for command lookup. Each activator checks that given context instance is activation of declared context class:
+They are used to declare command activation strategies. Every activation is created for concrete context class.
+
+@TODO: 
+Instances of my subclasses are used for command lookup. Each activation strategy checks that given context instance is activation of declared context class:
 	aToolContext isActivationOf: toolContextClass 
-By default I am activation of any of my superclasses. If command activator is defined for most base context class like me (CmdToolContext) then such command will be available for any kind of command tools: any shotcuts lookup, any menu, etc..
+By default I am activation of any of my superclasses. If command activation is defined for most base context class like me (CmdToolContext) then such command will be available for any kind of command tools: any shotcuts lookup, any menu, etc..
 Subclasses can override this method to extend set of commands which should be available for them but which declared for other context classes.
 
 I also responsible for command activation:

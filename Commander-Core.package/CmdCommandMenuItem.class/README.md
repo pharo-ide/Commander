@@ -1,10 +1,10 @@
 I represent command in menu.
-I am created with menu command activator and delegate all messages to it to support menu protocol.
+I am created with command activator and delegate all messages to it to support menu protocol.
  
 To create my instances use:
-	CmdCommandMenuItem activatingBy: aMenuCommandActivator
+	CmdCommandMenuItem activatingBy: aCommandActivator
 	
 Internal Representation and Key Implementation Points.
 
     Instance Variables
-	activator:		<CmdMenuCommandActivator>
+	activator:		<CmdCommandActivator>
