@@ -6,8 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"commandActivatorClass",
-		"rootGroup"
+		"rootGroup",
+		"activationStrategyClass"
 	],
 	"name" : "CmdMenu",
 	"type" : "normal"

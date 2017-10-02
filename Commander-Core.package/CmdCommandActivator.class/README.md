@@ -1,47 +1,35 @@
-I am a root of command activators hierarchy. My subclasses represent different ways how to create command instances in specific context, how to represent them to user, how initialize their state.
+I responsible to execute the command instance in concrete application context according to given activation strategy. 
 
-Users attach concrete activators to commands using class side methods marked with pragma #commandActivator.
-For example to make YourCommand executable by shortcut you need following method:
-	YourCommand class>>yourAppShortcutActivator
-		<commandActivator>
-		^CmdShortcutCommandActivator by: $e meta for: YourAppContext 
+I define three steps to execute command:
 
-My instances should be declared for concrete context of application tool, subclass of CmdToolContext. Application/tool provides instance of this context for command lookup:
-	activatorClass allDeclaredFor: aToolContext do: [:declaredActivator | ]
-Activator should be used only in declared context which is ensured by lookup method. But you can check it manually:
-	activator canBeUsedInContext: aToolContext
-Also activator can check that command is executable for given context:
-	activator canExecuteCommandInContext: aToolContext
-While you can ask declared activators for such questions generally they supposed to be used only as prototypes. Declared activators create ready to use activators which keep information about current context and able to execute command. To create new instance use following expression:
-	readyActivator := declaredActivator newActivationFor: aToolContext 
-I implement convinient method to iterate only executable commands:
-	activatorClass allExecutableIn: aToolContext do: [:readyActivator | ]
-For ready activator instance I also create new instance of command with possibiity to initialize state using given context:
-	command readParametersFromContext:  aToolContext 
-		
-Look at commands comments for details on this method.
-	
-Ready activator can execute command:
-	readyActivator executeCommand
-I perform it in three steps:
-1) #prepareCommandForExecution. Command should retrieve all state required for execution from activation context. By default I ask command to prepare full execution:
+1) #prepareCommandForExecution. Command should retrieve all state required for execution from activation context. By default ths logic is delegated to the command though context instance:
 	CmdCommandActivator>>prepareCommandForExecution
 		actualActivationContext prepareExecutionOf: command  
 During preparation commands can break execution by signalling CmdCommandAborted. For example It should happen if user cancel some confirmation dialog during command preparation.
 
 2) Command execution. All logic is implemented by command itself (#execute method).
-
-3) Applying execution result to activation context. I also delegate processing to command itself:
+	command execute.
+	
+3) Applying execution result to activation context. It is also delegated to the command itself though context instance:
 	CmdCommandActivator>>applyCommandResult
 		actualActivationContext applyResultOf: command  
-Idea is to be able interact with application when command completes. For example if user creates new package from browser then at the end of command browser should open created package.
+Idea is to be able interact with application when command completes. For example if user creates new package from browser then at the end the browser should open created package.
  
 For more details look at CmdCommand comments.
+
+I am able to check if comand can be executed in my context:
+	activator canExecuteCommand
+
+Different packages extends me to represent commands according to concrete activation strategy. For example context menu will ask me to create menu items. In such cases I just delegate actual logic to the command itself.
+
+Complex activation strategy can provide my subclasses. For example Drag&Drop command activation requires two steps to prepare and execute command. And there is CmdDragAndDropCommandActivator which incapsulates two active contexts where command should be executed. Look at it for details.  
+
+My instances are created by activation strategy:
+	activationStratagy newActivatorFor: aToolContext
 
 Internal Representation and Key Implementation Points.
 
     Instance Variables
-	id:		<Symbol>
-	command:		<CmdCommand>
-	activationContextClass:		<CmdToolContext class>	activator declaration context
-	actualActivationContext:		<CmdToolContext>	active execution context
+	command:		<CmdCommand> an activating command
+	context:		<CmdToolContext>	an active context where command is activated
+	activationStrategy:		<CmdCommandActivationStrategy>	strategy which defines how command should be accessed and executed in given context

@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "DenisKudryashov 10/2/2017 10:58",
+	"super" : "CmdCommandActivationStrategy",
+	"category" : "Commander-Activators-Shortcut",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"keyCombination"
+	],
+	"name" : "CmdShortcutCommandActivation",
+	"type" : "normal"
+}

@@ -1,30 +1,21 @@
-I am drag and drop command activator.
+I represent activation of command through drag and drop operation.
+In that case context variable from my superclass keeps context where drag was initiated.
+And my variable dropContext holds context where command should be executed by drop operation.
 
-Add me to commands using:
+I redefine execution logic with two separate steps:
+- prepare command in context of drag operation:
+	context prepareDragActivationOf: command
+- prepare command in context of drop operation:
+	dropContext prepareDropExecutionOf:  command
+Actual preparation logic is implemented by command. Contexts delegate processing to it. 
 
-	YourCommand>>yourApplicationDragAndDropActivator
-		<commandActivator>
-		^CmdDragAndDropCommandActivator for: YourAppContextForDrag toDropIn: YourAppContextForDrop
+Drag and drop logic of concrete UI application should execute command using:
+	activator executeDropInContext: aToolContextForDropOperation
 
-First argument of activator is a context where drap operation can be started. Last argument is a context where command can be executed by drop.
-
-Applications which support me should implement few drag and drop methods according to UI library (Morphic). At drag start a CmdDragPassenger should be created in current application context: 
-
-	CmdDragAndDropCommandActivator createDragPassengerInContext:  aToolContext
-	
-Then at drop target widget (morph) the drop context should be created. It should be used to ask given passenger about possibility to execute drop:
-- aPassenger canBeDroppedInContext: targetToolContext 
-- aPassanger dropInContext: targetToolContex 
-
-To support all these methods passenger asks my instances which delegate processing to underlying commands. Commands should define three methods:
-- canBeExecutedInDropContext: aToolContext 
-- prepareExecutionInDragContext: aToolContext
-- prepareExecutionInDropContext: aToolContext
-
-By default commands can be executed by any drop context and for preparation they do nothing. 
-
+My instances are created by CmdDragAndDropCommandActivation:
+	dragAndDropActivation newActivatorFor: aContextForDragOperation.
+		
 Internal Representation and Key Implementation Points.
 
     Instance Variables
-	dropContextClass:		<CmdToolContext class>
-	actualDropContext:		<CmdToolContext>
+	dropContext:		<CmdToolContext>

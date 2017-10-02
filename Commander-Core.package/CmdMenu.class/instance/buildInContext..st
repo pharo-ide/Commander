@@ -1,7 +1,7 @@
 building
 buildInContext: aToolContext
 
-	commandActivatorClass 
-		allDeclaredFor: aToolContext
+	activationStrategyClass 
+		allAvailableInContext: aToolContext
 		do: [ :activation | 
 			self buildCommandItemInContext: aToolContext activatingBy: activation]

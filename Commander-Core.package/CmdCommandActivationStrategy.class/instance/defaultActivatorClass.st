@@ -1,0 +1,3 @@
+activation
+defaultActivatorClass
+	^CmdCommandActivator

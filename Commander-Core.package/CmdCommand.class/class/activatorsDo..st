@@ -1,4 +1,4 @@
 accessing
 activatorsDo: aBlock
-	^self metaAnnotationsDo: [ :each | 
-		(each isKindOf: CmdCommandActivator) ifTrue: [ aBlock value: each ] ]
+	^self classAnnotationsDo: [ :each | 
+		(each isKindOf: CmdCommandActivationStrategy) ifTrue: [ aBlock value: each ] ]

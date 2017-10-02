@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "DenisKudryashov 10/2/2017 10:23",
+	"super" : "ClassAnnotation",
+	"category" : "Commander-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"contextDefinition"
+	],
+	"name" : "CmdCommandActivationStrategy",
+	"type" : "normal"
+}

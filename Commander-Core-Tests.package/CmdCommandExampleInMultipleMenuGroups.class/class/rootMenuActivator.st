@@ -1,5 +1,5 @@
 activation
 rootMenuActivator
-	<classMetaAnnotation>
+	<classAnnotation>
 	
-	^CmdMenuCommandActivatorExample byRootGroupItemOrder: 2 for: CmdToolContextStub1
+	^CmdMenuCommandActivationExample byRootGroupItemOrder: 2 for: CmdToolContextStub1

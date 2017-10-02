@@ -1,4 +1,4 @@
 testing
-allowsExecutionOf: aCommand
+allowsExecutionOf: aCommandClass
 
-	^aCommand canBeExecutedInContext: self
+	^aCommandClass canBeExecutedInContext: self

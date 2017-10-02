@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "DenisKudryashov 10/2/2017 10:52",
+	"super" : "CmdContextDefinition",
+	"category" : "Commander-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"contextClass"
+	],
+	"name" : "CmdSimpleContextDefinition",
+	"type" : "normal"
+}

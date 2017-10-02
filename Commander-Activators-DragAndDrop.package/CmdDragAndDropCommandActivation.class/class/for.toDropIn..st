@@ -1,0 +1,4 @@
+instance creation
+for: dragContextDefinitionCompatible toDropIn: dropContextDefinitionCompatible
+	^(self for: dragContextDefinitionCompatible)
+		dropContextDefinition: dropContextDefinitionCompatible asCommandContextDefinition
