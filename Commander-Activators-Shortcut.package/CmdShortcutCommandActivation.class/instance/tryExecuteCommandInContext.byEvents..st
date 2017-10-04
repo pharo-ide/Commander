@@ -3,7 +3,7 @@ tryExecuteCommandInContext: aToolContext byEvents: anEventBuffer
 	
 	| activator |
 	(keyCombination matches: anEventBuffer) ifTrue: [ 
-		(self canExecuteCommandInContext: aToolContext) ifFalse: [ ^false].
+		(self isActiveInContext: aToolContext) ifFalse: [ ^false].
 		
 		(keyCombination matchesCompletely: anEventBuffer)
 			ifTrue: [ KMBuffer uniqueInstance completeMatch.

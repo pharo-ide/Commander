@@ -2,10 +2,10 @@ tests
 testIteratingInstancesShouldSkipAbstractCommands
 
 	| activators context |
-	context := CmdToolContextStub3 new.
+	context := CmdToolContextStub1 new.
 	activators := OrderedCollection new.
 	CmdCommandActivationExample  
-		allAvailableInContext: context
+		visibleInstancesInContext: context
 		do: [:activator | activators add: activator].
 	
 	self assert: activators size equals: 1.

@@ -2,6 +2,6 @@ activation
 activateAllInContext: aToolContext by: blockWithActivator
 
 	self 
-		allExecutableInContext: aToolContext 
+		activeInstancesInContext: aToolContext 
 		do: [:activationStrategy | 
 			blockWithActivator value: (activationStrategy newActivatorFor: aToolContext)]
