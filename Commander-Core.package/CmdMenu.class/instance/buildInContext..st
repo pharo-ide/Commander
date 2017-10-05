@@ -2,6 +2,6 @@ building
 buildInContext: aToolContext
 
 	activationStrategyClass 
-		allAvailableInContext: aToolContext
+		visibleInstancesInContext: aToolContext
 		do: [ :activation | 
 			self buildCommandItemInContext: aToolContext activatingBy: activation]
