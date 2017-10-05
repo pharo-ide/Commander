@@ -1,4 +1,4 @@
 instance creation
-for: dragContextDefinitionCompatible toDropIn: dropContextDefinitionCompatible
-	^(self for: dragContextDefinitionCompatible)
-		dropContextDefinition: dropContextDefinitionCompatible asCommandContextDefinition
+for: dragAnnotationContext toDropIn: dropAnnotationContext
+	^(self for: dragAnnotationContext)
+		activeDropContext: dropAnnotationContext asAnnotationContext

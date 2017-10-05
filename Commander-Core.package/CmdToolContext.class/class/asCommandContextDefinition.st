@@ -1,4 +1,0 @@
-converting
-asCommandContextDefinition
-
-	^CmdSimpleContextDefinition contextClass: self

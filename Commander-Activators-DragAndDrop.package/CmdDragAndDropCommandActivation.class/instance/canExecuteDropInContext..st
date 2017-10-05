@@ -1,5 +1,5 @@
 testing
 canExecuteDropInContext: aToolContext
 
-	^(dropContextDefinition describes: aToolContext)
+	^(activeDropContext describes: aToolContext)
 		and: [ aToolContext allowsDropExecutionOf: self commandClass]
