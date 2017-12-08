@@ -6,4 +6,5 @@ buildContextSubMenuIn: aMenu
 	
 	contents do: [ :each | each buildContextMenu: submenu ].
 	
-	aMenu add: self name subMenu: submenu
+	submenu hasItems ifTrue: [ 
+		aMenu add: self name subMenu: submenu]
