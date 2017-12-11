@@ -1,3 +1,0 @@
-accessing
-commandClass
-	^command class

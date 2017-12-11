@@ -1,4 +1,4 @@
 testing
 canExecuteCommand
 
-	^self canExecuteCommandInContext: actualActivationContext
+	^activationStrategy isActiveInContext: context

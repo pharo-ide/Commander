@@ -1,6 +1,6 @@
-I represent passenger of drag and drop operation. I am created at start of drag operation  in current application context with set of appropriate commands represented by drop activators.
+I represent passenger of drag and drop operation. I am created at start of drag operation  in current context of application with set of appropriate commands annotated by drag&drop activation strategies.
 Then at drop target I detect most suitable command for given target context and execute it.
-Look at CmdDragAndDropCommandActivator comment for details
+Look at CmdDragAndDropCommandActivation comment for details
 
 Internal Representation and Key Implementation Points.
 

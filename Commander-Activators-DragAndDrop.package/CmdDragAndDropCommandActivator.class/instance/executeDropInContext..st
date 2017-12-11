@@ -1,4 +1,4 @@
 execution
 executeDropInContext: aToolContext
-	actualDropContext := aToolContext.
+	dropContext := aToolContext.
 	self executeCommand

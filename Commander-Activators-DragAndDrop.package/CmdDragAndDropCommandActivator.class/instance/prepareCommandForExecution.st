@@ -1,4 +1,4 @@
 execution
 prepareCommandForExecution
-	actualActivationContext prepareDragActivationOf: command.
-	actualDropContext prepareDropExecutionOf: command
+	context prepareDragActivationOf: command.
+	dropContext prepareDropExecutionOf: command

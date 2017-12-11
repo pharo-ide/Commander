@@ -8,4 +8,4 @@ To support menu my subclasses implement following methods:
 - isEmpty. It defines if item has children. 
 - isSimilarTo: anotherMenuItem. It defines if two items are similar.
 
-Also different kind of menu activators extend me and my subclasses by methods to support concrete menu
+Also different kinds of menu activation strategy extend me and my subclasses by methods to support concrete menu

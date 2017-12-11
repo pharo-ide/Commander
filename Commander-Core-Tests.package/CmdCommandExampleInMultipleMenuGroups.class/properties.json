@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "CmdRootOfCommandExamples",
+	"category" : "Commander-Core-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "CmdCommandExampleInMultipleMenuGroups",
+	"type" : "normal"
+}
