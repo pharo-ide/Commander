@@ -6,5 +6,6 @@ buildContextMenuFor: aMorph
 
 	rootGroup buildContextMenu: menu.
 	
-	menu lastSubmorph isMenuLineMorph ifTrue: [ menu lastSubmorph delete ].	
+	menu hasSubmorphs ifTrue: [ 
+		menu lastSubmorph isMenuLineMorph ifTrue: [ menu lastSubmorph delete ]].
 	^menu
