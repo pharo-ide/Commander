@@ -2,9 +2,7 @@
 	"commentStamp" : "DenisKudryashov 10/2/2017 14:47",
 	"super" : "Object",
 	"category" : "Commander-Core",
-	"classinstvars" : [
-		"commandDeclaringInstance"
-	],
+	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
