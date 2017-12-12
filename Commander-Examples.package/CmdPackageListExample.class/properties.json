@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "ComposablePresenter",
+	"category" : "Commander-Examples",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"listModel"
+	],
+	"name" : "CmdPackageListExample",
+	"type" : "normal"
+}
