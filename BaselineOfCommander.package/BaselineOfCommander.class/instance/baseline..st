@@ -26,6 +26,4 @@ baseline: spec
 			group: 'Core' with: #(#'Commander-Core');
 			group: 'AllActivators' with: #(#'Commander-Activators-Shortcut' #'Commander-Activators-ContextMenu' #'Commander-Activators-DragAndDrop' );
 			group: 'Tests' with: #(#'Commander-Core-Tests' );
-			group: 'default' with: #('Core' 'AllActivators' 'Tests' 'Commander-Examples')].
-		spec for: #'pharo6.x' do: [
-			spec group: 'default' with: #('Core' 'AllActivators' 'Tests')].
+			group: 'default' with: #('Core' 'AllActivators' 'Tests')]
