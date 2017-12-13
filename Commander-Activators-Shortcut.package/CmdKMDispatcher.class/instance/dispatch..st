@@ -2,7 +2,7 @@ dispatching
 dispatch: anEventBuffer
 
 	| context executed |
-	context := target morph createCommandContext.
+	context := self commandContext.
 	
 	CmdShortcutCommandActivation visibleInstancesInContext: context do: [ :shortcut | 
 		executed := shortcut tryExecuteCommandInContext: context byEvents: anEventBuffer.
