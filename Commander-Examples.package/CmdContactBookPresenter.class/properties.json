@@ -1,14 +1,14 @@
 {
 	"commentStamp" : "",
-	"super" : "CmdCommand",
+	"super" : "ComposablePresenter",
 	"category" : "Commander-Examples",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"package",
-		"newName"
+		"table",
+		"contactBook"
 	],
-	"name" : "CmdRenamePackageCommandExample",
+	"name" : "CmdContactBookPresenter",
 	"type" : "normal"
 }

@@ -1,7 +1,7 @@
-as yet unclassified
+examples
 defaultSpec
 
 	^ SpecLayout composed
 		newColumn: [ :column |
-			column add: #listModel];
+			column add: #table];
 		yourself

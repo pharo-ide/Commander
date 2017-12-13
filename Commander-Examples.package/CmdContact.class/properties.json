@@ -1,13 +1,14 @@
 {
 	"commentStamp" : "",
-	"super" : "ComposablePresenter",
+	"super" : "Object",
 	"category" : "Commander-Examples",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"listModel"
+		"name",
+		"phone"
 	],
-	"name" : "CmdPackageListExample",
+	"name" : "CmdContact",
 	"type" : "normal"
 }
