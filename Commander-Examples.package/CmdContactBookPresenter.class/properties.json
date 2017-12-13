@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "ComposablePresenter",
+	"super" : "ComposableModel",
 	"category" : "Commander-Examples",
 	"classinstvars" : [ ],
 	"pools" : [ ],
