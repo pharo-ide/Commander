@@ -2,7 +2,7 @@ dispatching
 dispatch: anEventBuffer
 
 	| context executed |
-	context := self commandContext.
+	context := self commandProvider createCommandContext.
 	
 	CmdShortcutCommandActivation visibleInstancesInContext: context do: [ :shortcut | 
 		executed := shortcut tryExecuteCommandInContext: context byEvents: anEventBuffer.

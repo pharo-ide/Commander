@@ -19,7 +19,9 @@ baseline: spec
 			package: #'Commander-Core' with: [spec requires: #(ClassAnnotation)];
 			package: #'Commander-Core-Tests' with: [
 				spec requires: #(#'Commander-Core' #ClassAnnotationTests)];
-			package: #'Commander-Examples'.
+			package: #'Commander-SpecSupport';
+			package: #'Commander-Examples' with: [
+				spec requires: #(#'Commander-SpecSupport')].
 		spec 
 			group: 'Core' with: #(#'Commander-Core');
 			group: 'AllActivators' with: #(#'Commander-Activators-Shortcut' #'Commander-Activators-ContextMenu' #'Commander-Activators-DragAndDrop' );

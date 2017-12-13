@@ -1,7 +1,7 @@
 instance creation
-attachedTo: aMorph withCommandsFrom: someContextObject
+attachedTo: aMorph withCommandsFrom: someObjectWithCommandContext
 
 	| dispatcher |
 	dispatcher := self attachedTo: aMorph.
-	dispatcher commandContext: someContextObject.
+	dispatcher commandProvider: someObjectWithCommandContext.
 	^dispatcher
