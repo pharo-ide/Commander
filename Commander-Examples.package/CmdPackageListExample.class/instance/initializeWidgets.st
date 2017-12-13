@@ -1,5 +1,5 @@
 initialization
 initializeWidgets
 	listModel := self newList.
-	listModel menu: [ :menu | self buildMenu: menu ].
+	listModel menu: [ self buildMenu ].
 	listModel items: RPackageOrganizer default packages
