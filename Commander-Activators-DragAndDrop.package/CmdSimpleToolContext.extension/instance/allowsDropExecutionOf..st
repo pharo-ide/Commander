@@ -1,3 +1,3 @@
 *Commander-Activators-DragAndDrop
-allowsDropExecutionOf: aCommandClass
-	^aCommandClass canBeExecutedInDropContext: tool
+allowsDropExecutionOf: aCommand
+	^aCommand canBeExecutedInDropContext: tool
