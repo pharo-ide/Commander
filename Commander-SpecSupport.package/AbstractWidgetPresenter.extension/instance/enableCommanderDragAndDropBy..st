@@ -1,0 +1,5 @@
+*Commander-SpecSupport
+enableCommanderDragAndDropBy: presenterWithCommands
+
+	self enableCommanderDragBy: presenterWithCommands.
+	self enableCommanderDropBy: presenterWithCommands
