@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "ComposableModel",
+	"category" : "Commander-Examples",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"book1",
+		"book2"
+	],
+	"name" : "CmdTwoBooksPresenter",
+	"type" : "normal"
+}

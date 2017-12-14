@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "CmdCommand",
+	"category" : "Commander-Examples",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"contactBook",
+		"contact"
+	],
+	"name" : "CmdAddContactCommand",
+	"type" : "normal"
+}
