@@ -1,0 +1,3 @@
+context
+createCommandContextForSelection: selectedContacts
+	^CmdContactBookPresenterContext for: self of: selectedContacts

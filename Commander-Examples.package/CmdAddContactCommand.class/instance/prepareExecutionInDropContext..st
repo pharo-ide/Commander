@@ -2,4 +2,5 @@ execution
 prepareExecutionInDropContext: aToolContext
 	super prepareExecutionInDropContext: aToolContext.
 	
-	contactBook := aToolContext selectedContactBook
+	contactBook := aToolContext selectedContactBook.
+	beforeContact := aToolContext selectedContact

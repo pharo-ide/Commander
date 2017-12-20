@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "DenisKudryashov 12/20/2017 17:05",
 	"super" : "CmdCommand",
 	"category" : "Commander-Examples",
 	"classinstvars" : [ ],
@@ -7,6 +7,7 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"contactBook",
+		"beforeContact",
 		"contact"
 	],
 	"name" : "CmdAddContactCommand",

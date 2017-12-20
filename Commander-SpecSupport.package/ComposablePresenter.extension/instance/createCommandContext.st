@@ -1,3 +1,4 @@
 *Commander-SpecSupport
 createCommandContext
-	^CmdSimpleToolContext for: self
+	"Subclases should override it if they provide any selection"
+	^self createCommandContextForSelection: #()

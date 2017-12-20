@@ -4,5 +4,5 @@ enableCommanderDropBy: aPresenter
 	self dropEnabled: true.
 	self wantDropBlock: [ :draggedItem :event :source | 
 		draggedItem canBeDroppedInContext: aPresenter createCommandContext ].
-	self acceptDropBlock: [ :transfer | 
-		transfer passenger dropInContext: aPresenter createCommandContext ].
+	self acceptDropBlock: [ :transfer :event :receiverMorph :receiverPresenter  | 
+		transfer passenger dropInContext: (receiverMorph createCommandContextBy: aPresenter forDropAt: event)].

@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "CmdToolContext",
+	"category" : "Commander-Examples",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"selectedContacts"
+	],
+	"name" : "CmdContactBookPresenterContext",
+	"type" : "normal"
+}

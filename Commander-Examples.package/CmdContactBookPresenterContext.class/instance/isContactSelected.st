@@ -1,0 +1,3 @@
+testing
+isContactSelected
+	^selectedContacts notEmpty
