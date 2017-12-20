@@ -1,5 +1,4 @@
 activation
 shortcutActivation
 	<classAnnotation>
-	
-   ^CmdDragAndDropCommandActivation for: CmdContactBookPresenter toDropIn: CmdContactBookPresenter
+    ^CmdShortcutCommandActivation by: $n meta for: CmdContactBookPresenter 
