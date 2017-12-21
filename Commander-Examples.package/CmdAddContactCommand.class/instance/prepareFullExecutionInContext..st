@@ -4,7 +4,8 @@ prepareFullExecutionInContext: aToolContext
 	super prepareFullExecutionInContext: aToolContext.
 	
 	contactBook := aToolContext selectedContactBook.
-	beforeContact := aToolContext selectedContact.
+	aToolContext isContactSelected ifTrue: [ 
+		beforeContact := aToolContext selectedContact].
 	
 	nameAndPhone := UIManager default 
 		request: 'Enter new contact name and phone (split by comma)' 
