@@ -1,4 +1,4 @@
-*Commander-Activators-ContextMenu
+context menu
 fillContextMenu: aMenu using: aCommandActivator
 	| item |
 	item := aMenu 

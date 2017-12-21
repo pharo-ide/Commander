@@ -1,5 +1,5 @@
 execution
 execute
-	beforeContact 
+	afterContact 
 		ifNil: [ contactBook addContact: contact]
-		ifNotNil: [ contactBook addContact: contact before: beforeContact ]
+		ifNotNil: [ contactBook addContact: contact after: afterContact ]

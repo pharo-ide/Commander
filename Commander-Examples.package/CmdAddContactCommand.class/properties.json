@@ -7,8 +7,8 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"contactBook",
-		"beforeContact",
-		"contact"
+		"contact",
+		"afterContact"
 	],
 	"name" : "CmdAddContactCommand",
 	"type" : "normal"

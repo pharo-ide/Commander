@@ -1,4 +1,4 @@
 activation
 contextMenuActivation
 	<classAnnotation>
-    ^CmdContextMenuCommandActivation byRootGroupItemOrder: 1 for: CmdContactBookPresenter 
+	^CmdContextMenuCommandActivation byRootGroupItemOrder: 1 for: CmdContactBookPresenter
