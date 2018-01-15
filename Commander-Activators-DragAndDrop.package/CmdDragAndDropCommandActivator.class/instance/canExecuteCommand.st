@@ -1,4 +1,4 @@
 testing
 canExecuteCommand
 
-	^super canExecuteCommand and: [ activationStrategy canExecuteDropInContext: dropContext ]
+	^super canExecuteCommand and: [ self canExecuteDropInContext: dropContext ]

@@ -2,6 +2,6 @@ execution
 executeCommand
 
 	[self prepareCommandForExecution.
-	command execute.
+	context executeCommand: command by: self.
 	self applyCommandResult] 
 		on: CmdCommandAborted do: [ :exc |  ]

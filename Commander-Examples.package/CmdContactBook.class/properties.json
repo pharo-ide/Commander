@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Commander-Examples",
+	"classinstvars" : [
+		"family",
+		"coworkers"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"contents"
+	],
+	"name" : "CmdContactBook",
+	"type" : "normal"
+}

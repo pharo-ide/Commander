@@ -1,4 +1,5 @@
 testing
 canExecuteDropInContext: aToolContext
 
-	^activationStrategy canExecuteDropInContext: aToolContext
+	^(activationStrategy isDropActiveInContext: aToolContext)
+		and: [  aToolContext allowsDropExecutionOf: command ]

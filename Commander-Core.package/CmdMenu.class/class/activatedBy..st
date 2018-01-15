@@ -1,5 +1,5 @@
 instance creation
-activatedBy: aCommandActivatorClass
+activatedBy: aCommandActivationStrategyClass
 
 	^self new 
-		activationStrategyClass: aCommandActivatorClass
+		activationStrategyClass: aCommandActivationStrategyClass

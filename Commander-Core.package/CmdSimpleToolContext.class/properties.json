@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "CmdToolContext",
+	"category" : "Commander-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "CmdSimpleToolContext",
+	"type" : "normal"
+}

@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Commander-SpecSupport",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"sourcePresenter",
+		"draggedItems",
+		"commandPassenger"
+	],
+	"name" : "CmdSpecDragPassenger",
+	"type" : "normal"
+}

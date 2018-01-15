@@ -1,0 +1,3 @@
+*Commander-SpecSupport
+buildWithSpec
+	^self
