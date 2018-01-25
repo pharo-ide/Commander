@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "DenisKudryashov 12/20/2017 17:05",
+	"commentStamp" : "",
 	"super" : "CmdCommand",
 	"category" : "Commander-Examples",
 	"classinstvars" : [ ],
