@@ -1,4 +1,4 @@
 instance creation
-by: aKeyCombination for: aToolContextClass 
-	^(self for: aToolContextClass)
+by: aKeyCombination for: anAnnotationUser  
+	^(self for: anAnnotationUser)
 		keyCombination: aKeyCombination 
