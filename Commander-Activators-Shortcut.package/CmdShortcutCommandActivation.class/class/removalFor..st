@@ -1,3 +1,5 @@
 well known shortcuts
-removalFor: aToolContextClass 
-	^self by: $x meta for: aToolContextClass 
+removalFor: anAnnotationUser  
+	<classAnnotationDependency>
+	
+	^self by: $x meta for: anAnnotationUser  
