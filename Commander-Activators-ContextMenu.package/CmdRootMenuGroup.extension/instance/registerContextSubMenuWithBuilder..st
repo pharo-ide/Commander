@@ -1,2 +1,0 @@
-*Commander-Activators-ContextMenu
-registerContextSubMenuWithBuilder: aBuilder
