@@ -1,4 +1,4 @@
 world menu
-createWorldContext
+createCommandContext
 
 	^CmdWorldMenuContext for: World

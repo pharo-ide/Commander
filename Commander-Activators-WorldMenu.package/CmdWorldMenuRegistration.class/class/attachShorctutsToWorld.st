@@ -2,4 +2,4 @@ world menu
 attachShorctutsToWorld
 	<script>
 	
-	World attachKeymapCategory: #CmdWorldShortcutsCategory targetting: self
+	World attachKeymapCategory: self shortcutsCategory targetting: self
