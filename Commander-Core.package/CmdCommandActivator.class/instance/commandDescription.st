@@ -1,4 +1,4 @@
 accessing
 commandDescription
 
-	^command description
+	^command description ifNil: [ self menuItemName ]
