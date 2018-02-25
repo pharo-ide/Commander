@@ -8,4 +8,5 @@ fillContextMenu: aMenu using: aCommandActivator
 		selector: #executeCommand.
 	
 	aCommandActivator setUpShortcutTipForMenuItem: item.
-	self setUpIconForMenuItem: item
+	self setUpIconForMenuItem: item.
+	self description ifNotNil: [:d | item setBalloonText: d]

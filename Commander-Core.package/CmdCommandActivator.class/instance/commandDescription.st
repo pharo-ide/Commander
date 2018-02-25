@@ -1,0 +1,4 @@
+accessing
+commandDescription
+
+	^command description

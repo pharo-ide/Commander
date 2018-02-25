@@ -4,6 +4,7 @@ registerContextMenuItemsWithBuilder: aBuilder using: aCommandActivator
 	
 	item := (aBuilder item: aCommandActivator menuItemName)
 		order: aCommandActivator menuItemOrder;
+		help: self description;
 		action: [aCommandActivator executeCommand]. 
 	
 	aCommandActivator setUpShortcutTipForMenuItem: item.
