@@ -1,11 +1,11 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "DenisKudryashov 2/25/2018 08:40",
 	"super" : "Object",
 	"category" : "Commander-Activators-WorldMenu",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "CmdWorldMenuBuilder",
+	"name" : "CmdWorldMenuRegistration",
 	"type" : "normal"
 }

@@ -1,9 +1,9 @@
 world menu
-worldMenuOn: aBuilder 
+registerMenuOn: aBuilder 
 	<worldMenu>
 
 	| menu |
 	menu := CmdMenu activatedBy: CmdContextMenuCommandActivation.
-	menu buildInContext: (CmdWorldMenuContext for: World).
+	menu buildInContext: self createWorldContext.
 	
 	menu registerContextMenuItemsWithBuilder: aBuilder 
