@@ -7,4 +7,5 @@ buildContextSubMenuIn: aMenu
 	contents do: [ :each | each buildContextMenu: submenu ].
 	
 	submenu hasItems ifTrue: [ 
-		aMenu add: self name subMenu: submenu]
+		aMenu add: self name icon: self icon subMenu: submenu.
+		self description ifNotNil: [:d | aMenu lastItem setBalloonText: d] ]
