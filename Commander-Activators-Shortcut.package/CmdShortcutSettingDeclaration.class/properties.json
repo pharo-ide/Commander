@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "SettingDeclaration",
+	"category" : "Commander-Activators-Shortcut",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"shortcutActivation"
+	],
+	"name" : "CmdShortcutSettingDeclaration",
+	"type" : "normal"
+}
