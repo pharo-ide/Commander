@@ -6,8 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"setting"
+		"shortcutActivation"
 	],
-	"name" : "CmdShortcutSettingDeclaration",
+	"name" : "CmdShortcutSetting",
 	"type" : "normal"
 }

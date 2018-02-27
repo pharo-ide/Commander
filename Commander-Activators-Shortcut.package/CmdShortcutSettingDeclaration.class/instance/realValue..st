@@ -1,3 +1,3 @@
 accessing
 realValue: aShortcut
-	shortcutActivation keyCombination: aShortcut
+	setting keyCombination: aShortcut
