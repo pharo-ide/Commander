@@ -1,4 +1,4 @@
 visitor
 acceptSettings: aVisitor 
 
-	^ aVisitor visitCmdShortcutSetting: self
+	shortcutActivation isRedefined ifTrue: [ ^ aVisitor visitCmdShortcutSetting: self]

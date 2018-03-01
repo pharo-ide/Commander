@@ -1,5 +1,7 @@
 accessing
 realValue: aShortcutActivation
 
-	shortcutActivation := aShortcutActivation.
-	self triggerEvent: self privateChangeEvent with: self
+	shortcutActivation redefineBy: [
+			shortcutActivation keyCombination: aShortcutActivation keyCombination].
+		
+	self updated
