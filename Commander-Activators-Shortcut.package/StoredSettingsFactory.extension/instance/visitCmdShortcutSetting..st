@@ -1,0 +1,3 @@
+*Commander-Activators-Shortcut
+visitCmdShortcutSetting: aCmdShortcutSetting
+	self newStoredSetting realValue: aCmdShortcutSetting shortcutActivation

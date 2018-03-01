@@ -1,0 +1,4 @@
+accessing
+realValue
+
+	^ shortcutActivation

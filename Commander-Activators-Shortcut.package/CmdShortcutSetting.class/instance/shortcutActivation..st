@@ -1,3 +1,3 @@
 accessing
-shortcutActivation: anObject
-	shortcutActivation := anObject
+shortcutActivation: aShortcutActivation
+	shortcutActivation := aShortcutActivation
