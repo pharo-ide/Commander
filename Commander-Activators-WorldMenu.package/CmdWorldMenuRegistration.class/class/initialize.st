@@ -1,4 +1,4 @@
 world menu
 initialize
 	
-	self attachShorctutsToWorld 
+	self update 

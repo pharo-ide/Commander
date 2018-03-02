@@ -1,0 +1,4 @@
+accessing
+hasDefault
+
+	^shortcutActivation isRedefined
