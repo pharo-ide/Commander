@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "CmdContextMenuCommandActivation",
+	"category" : "Commander-Activators-TextView",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "CmdTextLeftBarMenuCommandActivation",
+	"type" : "normal"
+}
