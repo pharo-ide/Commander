@@ -1,5 +1,5 @@
 settings
-settingsOn: aBuilder
+buildSettingsOn: aBuilder
 	<systemsettings>
 	(aBuilder group: #shortcuts)
 		label: 'Shortcuts';

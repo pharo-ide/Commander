@@ -1,5 +1,5 @@
 settings
-settingNodeFor: aShortcutActivation on: aBuilder
+buildSettingNodeFor: aShortcutActivation on: aBuilder
 
 	| nodeBuilder |
 	nodeBuilder := aBuilder 
