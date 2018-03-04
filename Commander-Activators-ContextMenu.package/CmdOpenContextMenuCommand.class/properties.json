@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "DenisKudryashov 3/4/2018 23:37",
+	"super" : "CmdCommand",
+	"category" : "Commander-Activators-ContextMenu",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"context"
+	],
+	"name" : "CmdOpenContextMenuCommand",
+	"type" : "normal"
+}
