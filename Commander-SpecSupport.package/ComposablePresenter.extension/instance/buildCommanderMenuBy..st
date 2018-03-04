@@ -1,4 +1,4 @@
 *Commander-SpecSupport
 buildCommanderMenuBy: aMenuCommandActivationClass
 
-	^aMenuCommandActivationClass buildMenuFor: self inContext: self createCommandContext
+	^aMenuCommandActivationClass buildContextMenuFor: self inContext: self createCommandContext

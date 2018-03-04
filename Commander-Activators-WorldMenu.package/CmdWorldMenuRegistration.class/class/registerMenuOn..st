@@ -3,4 +3,4 @@ registerMenuOn: aBuilder
 	<worldMenu>
 
 	CmdContextMenuCommandActivation
-		registerMenuOn: aBuilder inContext: self createCommandContext
+		registerContextMenuOn: aBuilder inContext: self createCommandContext
