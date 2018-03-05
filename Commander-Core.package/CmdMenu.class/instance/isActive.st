@@ -1,0 +1,3 @@
+testing
+isActive
+	^rootGroup isActive
