@@ -1,12 +1,14 @@
 context menu
 fillContextMenu: aMenu using: aCommandActivator
-	| submenu item |
-	
-	submenu := self createContextMenu.
-	submenu hasItems ifFalse: [ ^self ].
-	 
-	item := aMenu 
-		add: aCommandActivator menuItemName icon: aCommandActivator menuItemIcon subMenu: submenu.
-	aCommandActivator setUpShortcutTipForMenuItem: item.
-	self setUpIconForMenuItem: item.
-	self description ifNotNil: [:d | item setBalloonText: d]
+	"Here we need to take care because this command itself is added to menu of same context.
+	So we will always enter into this method during submenu generation. 
+	We catch this recursion using RecursionStopper. 
+	It is easier than adding extra logic to menu building process"	
+	| submenu |
+	RecursionStopper during: [ 
+		submenu := self createContextMenu.
+		submenu hasItems ifFalse: [ ^self ].
+		
+		super fillContextMenu: aMenu using: aCommandActivator.
+		aMenu lastItem subMenu: submenu
+	]
