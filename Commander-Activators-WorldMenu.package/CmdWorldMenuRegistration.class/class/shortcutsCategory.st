@@ -1,3 +1,0 @@
-world menu
-shortcutsCategory
-	^#CmdWorldShortcutsCategory

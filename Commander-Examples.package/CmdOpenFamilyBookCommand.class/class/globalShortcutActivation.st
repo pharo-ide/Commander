@@ -2,4 +2,4 @@ activation
 globalShortcutActivation
 	<classAnnotation>
 	
-	^CmdShortcutCommandActivation by: $o meta, $f meta for: CmdWorldMenuContext 
+	^CmdShortcutCommandActivation by: $f meta for: CmdWorldMenuContext 
