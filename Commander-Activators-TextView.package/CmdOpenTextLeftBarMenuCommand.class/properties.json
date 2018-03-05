@@ -1,11 +1,11 @@
 {
-	"commentStamp" : "DenisKudryashov 3/4/2018 20:48",
-	"super" : "CmdClickActivation",
+	"commentStamp" : "",
+	"super" : "CmdOpenContextMenuCommand",
 	"category" : "Commander-Activators-TextView",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "CmdTextLeftBarClickActivation",
+	"name" : "CmdOpenTextLeftBarMenuCommand",
 	"type" : "normal"
 }

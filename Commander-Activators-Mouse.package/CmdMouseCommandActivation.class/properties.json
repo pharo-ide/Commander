@@ -6,8 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"whichButton"
+		"whichButton",
+		"keyboardModifier"
 	],
-	"name" : "CmdMouseCommandActivationStrategy",
+	"name" : "CmdMouseCommandActivation",
 	"type" : "normal"
 }
