@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "CmdCommandActivationStrategy",
+	"category" : "Commander-Activators-Mouse",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"whichButton"
+	],
+	"name" : "CmdMouseCommandActivationStrategy",
+	"type" : "normal"
+}

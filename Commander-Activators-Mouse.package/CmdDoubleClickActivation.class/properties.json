@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "CmdMouseCommandActivationStrategy",
+	"category" : "Commander-Activators-Mouse",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "CmdDoubleClickActivation",
+	"type" : "normal"
+}
