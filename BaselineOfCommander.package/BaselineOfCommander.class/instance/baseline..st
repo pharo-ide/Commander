@@ -34,7 +34,4 @@ baseline: spec
 			group: 'Core' with: #(#'Commander-Core');
 			group: 'AllActivators' with: #(#'Commander-Activators-Shortcut' #'Commander-Activators-ContextMenu' #'Commander-Activators-DragAndDrop' #'Commander-Activators-WorldMenu' #'Commander-Activators-TextView' #'Commander-Activators-Mouse');
 			group: 'Tests' with: #(#'Commander-Core-Tests' );
-			group: 'default' with: #('Core' 'AllActivators' 'Tests')].
-		
-	spec for: #'pharo7' do: [ 
-		spec group: 'default' with: #('Core' 'AllActivators' 'Tests' #'Commander-SpecSupport' #'Commander-Examples')]
+			group: 'default' with: #('Core' 'AllActivators' 'Tests')]
