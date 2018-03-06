@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "DenisKudryashov 3/6/2018 13:39",
 	"super" : "CmdOpenContextMenuCommand",
 	"category" : "Commander-Activators-TextView",
 	"classinstvars" : [ ],
