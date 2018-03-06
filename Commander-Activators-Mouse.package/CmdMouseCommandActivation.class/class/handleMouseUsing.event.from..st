@@ -4,7 +4,6 @@ handleMouseUsing: someObjectWithCommandContext event: anEvent from: sourceMorph
 	targetContext := someObjectWithCommandContext 
 		createCommandContextForCursorAt: anEvent cursorPoint.
 	
-	self activateAllInContext: targetContext by: [:activator | 
-		^activator executeCommand ].
+	self executeCommandInContext: targetContext.
 	
 	anEvent wasHandled: false

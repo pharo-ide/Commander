@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "DenisKudryashov 3/6/2018 13:27",
 	"super" : "CmdMouseCommandActivation",
 	"category" : "Commander-Activators-Mouse",
 	"classinstvars" : [ ],
