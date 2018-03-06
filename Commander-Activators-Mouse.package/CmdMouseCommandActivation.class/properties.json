@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "DenisKudryashov 3/6/2018 13:26",
+	"super" : "CmdCommandActivationStrategy",
+	"category" : "Commander-Activators-Mouse",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"whichButton",
+		"keyboardModifier"
+	],
+	"name" : "CmdMouseCommandActivation",
+	"type" : "normal"
+}

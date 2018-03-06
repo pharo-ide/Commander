@@ -22,14 +22,16 @@ baseline: spec
 
 			package: #'Commander-Activators-WorldMenu' with: [
 				spec requires: #(#'Commander-Activators-Shortcut' #'Commander-Activators-ContextMenu' )];
+			package: #'Commander-Activators-Mouse' with: [
+				spec requires: #(#'Commander-Core' )];
 			package: #'Commander-Activators-TextView' with: [
-				spec requires: #(#'Commander-Activators-ContextMenu' )];
+				spec requires: #(#'Commander-Activators-ContextMenu' #'Commander-Activators-Mouse')];
 			
 			package: #'Commander-SpecSupport';
 			package: #'Commander-Examples' with: [
 				spec requires: #(#'Commander-SpecSupport')].
 		spec 
 			group: 'Core' with: #(#'Commander-Core');
-			group: 'AllActivators' with: #(#'Commander-Activators-Shortcut' #'Commander-Activators-ContextMenu' #'Commander-Activators-DragAndDrop' #'Commander-Activators-WorldMenu' #'Commander-Activators-TextView');
+			group: 'AllActivators' with: #(#'Commander-Activators-Shortcut' #'Commander-Activators-ContextMenu' #'Commander-Activators-DragAndDrop' #'Commander-Activators-WorldMenu' #'Commander-Activators-TextView' #'Commander-Activators-Mouse');
 			group: 'Tests' with: #(#'Commander-Core-Tests' );
 			group: 'default' with: #('Core' 'AllActivators' 'Tests')]

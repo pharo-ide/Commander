@@ -1,0 +1,3 @@
+morphs setup
+morphicEventType
+	^#click
