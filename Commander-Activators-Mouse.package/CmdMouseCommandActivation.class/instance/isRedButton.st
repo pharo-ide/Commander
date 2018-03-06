@@ -1,4 +1,4 @@
 testing
-isActionButton
+isRedButton
 
 	^whichButton anyMask: MouseEvent redButton

@@ -1,4 +1,4 @@
 initialization
-beActionButton
+beRedButton
 	
 	whichButton := MouseEvent redButton

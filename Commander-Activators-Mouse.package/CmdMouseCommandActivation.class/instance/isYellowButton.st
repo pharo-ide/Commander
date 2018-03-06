@@ -1,4 +1,4 @@
 testing
-isContextButton
+isYellowButton
 
 	^whichButton anyMask: MouseEvent yellowButton

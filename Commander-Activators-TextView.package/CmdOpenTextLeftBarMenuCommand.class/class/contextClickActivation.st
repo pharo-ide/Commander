@@ -2,5 +2,5 @@ activation
 contextClickActivation
 	<classAnnotation>
 	
-	^CmdTextLeftBarClickActivation byContextButtonFor: CmdToolContext
+	^CmdTextLeftBarClickActivation byYellowButtonFor: CmdToolContext
 	

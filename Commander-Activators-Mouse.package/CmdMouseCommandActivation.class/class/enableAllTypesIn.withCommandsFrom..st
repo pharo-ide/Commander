@@ -1,5 +1,0 @@
-morphs setup
-enableAllTypesIn: aMorph withCommandsFrom: someObjectWithCommandContext
-
-	CmdClickActivation enableIn: aMorph withCommandsFrom: someObjectWithCommandContext.
-	CmdDoubleClickActivation enableIn: aMorph withCommandsFrom: someObjectWithCommandContext

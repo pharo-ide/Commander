@@ -2,4 +2,4 @@ initialization
 initialize
 	super initialize.
 	
-	self beActionButton 
+	self beRedButton 

@@ -1,0 +1,6 @@
+*Commander-Activators-Mouse
+enableAllMouseCommandsFrom: someObjectWithCommandContext
+	
+	self
+		enableMouseCommands: CmdClickActivation withContextFrom: someObjectWithCommandContext;
+		enableMouseCommands: CmdDoubleClickActivation withContextFrom: someObjectWithCommandContext

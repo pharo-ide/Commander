@@ -1,5 +1,5 @@
 morphs setup
-enableIn: aMorph withCommandsFrom: someObjectWithCommandContext
+enableInMorph: aMorph withCommandsFrom: someObjectWithCommandContext
 
 	aMorph 
 		on: self morphicEventType 
