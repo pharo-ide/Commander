@@ -2,7 +2,7 @@ baselines
 baseline: spec
 	<baseline>
 	spec for: #'common' do: [
-		spec 
+		spec
 			baseline: #ClassAnnotation with: [ 
 				spec 
 					repository: 'github://dionisiydk/ClassAnnotation:v0.3.x';
