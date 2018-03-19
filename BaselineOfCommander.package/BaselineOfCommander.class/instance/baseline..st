@@ -2,10 +2,10 @@ baselines
 baseline: spec
 	<baseline>
 	spec for: #'common' do: [
-		spec 
+		spec
 			baseline: #ClassAnnotation with: [ 
 				spec 
-					repository: self classAnnotationRepo;
+					repository: 'github://dionisiydk/ClassAnnotation:v0.3.x';
 					loads: 'Core' ];
 			project: #ClassAnnotationTests copyFrom: #ClassAnnotation with: [
 				spec loads: 'Tests'];
