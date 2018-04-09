@@ -41,4 +41,4 @@ baseline: spec
         spec
             package: 'Commander-SpecSupport' with: [ 
                 spec requires: #('Spec70Compatibility') ].
-			spec group: 'default' with: [ #('Core' 'AllActivators' #'Commander-SpecSupport' #'Commander-Examples' 'Tests')]] 
+			spec group: 'default' with: #('Core' 'AllActivators' #'Commander-SpecSupport' #'Commander-Examples' 'Tests')] 
