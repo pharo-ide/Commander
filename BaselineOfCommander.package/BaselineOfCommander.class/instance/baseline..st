@@ -34,4 +34,11 @@ baseline: spec
 			group: 'Core' with: #(#'Commander-Core');
 			group: 'AllActivators' with: #(#'Commander-Activators-Shortcut' #'Commander-Activators-ContextMenu' #'Commander-Activators-DragAndDrop' #'Commander-Activators-WorldMenu' #'Commander-Activators-TextView' #'Commander-Activators-Mouse');
 			group: 'Tests' with: #(#'Commander-Core-Tests' );
-			group: 'default' with: #('Core' 'AllActivators' 'Tests')]
+			group: 'default' with: #('Core' 'AllActivators' 'Tests')].
+		
+		spec for: #'pharo6.x' do: [    
+        self spec70: spec.        
+        spec
+            package: 'Commander-SpecSupport' with: [ 
+                spec requires: #('Spec70Compatibility') ].
+			spec group: 'default' with: #('Core' 'AllActivators' #'Commander-SpecSupport' #'Commander-Examples' 'Tests')] 
