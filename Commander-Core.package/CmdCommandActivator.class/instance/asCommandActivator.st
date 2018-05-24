@@ -1,0 +1,3 @@
+converting
+asCommandActivator
+	^self

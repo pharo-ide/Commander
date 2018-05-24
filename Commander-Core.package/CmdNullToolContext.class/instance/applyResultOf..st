@@ -1,0 +1,2 @@
+command execution
+applyResultOf: aCommand
