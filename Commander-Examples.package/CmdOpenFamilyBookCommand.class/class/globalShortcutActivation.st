@@ -4,4 +4,4 @@ globalShortcutActivation
 	Uncomment following pragma when you want to place with this"
 	"<classAnnotation>"
 	
-	^CmdShortcutCommandActivation by: $o meta, $f meta for: CmdWorldMenuContext 
+	^CmdShortcutActivation by: $o meta, $f meta for: CmdWorldMenuContext 
