@@ -1,4 +1,5 @@
 execution
 activationStrategy
-	"Subclasses can override this method with specific kind of activation strategy"
-	^CmdContextMenuCommandActivation 
+	"Subclasses should return specific kind of activation strategy
+	which will be used to collect context menu commands"
+	self subclassResponsibility 

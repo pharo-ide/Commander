@@ -2,7 +2,7 @@
 setUpShortcutTipForMenuItem: aMenuItemMorph
 	| keyText |
 	
-	CmdShortcutCommandActivation 
+	CmdShortcutActivation 
 		activeInstancesFor: command class inContext: context
 		do: [ :shortcut |  	
 			"this is trick to show shortcut on menu with existing menu support"

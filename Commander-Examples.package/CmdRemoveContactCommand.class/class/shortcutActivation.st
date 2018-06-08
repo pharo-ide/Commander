@@ -1,4 +1,4 @@
 activation
 shortcutActivation
 	<classAnnotation>
-    ^CmdShortcutCommandActivation by: $x meta for: CmdContactBookPresenter 
+    ^CmdShortcutActivation by: $x meta for: CmdContactBookPresenter 

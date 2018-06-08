@@ -1,5 +1,5 @@
 morphs setup
-handleContextMouseUsing: someObjectWithCommandContext event: anEvent from: sourceMorph
+handleYellowMouseClickUsing: someObjectWithCommandContext event: anEvent from: sourceMorph
 
 	anEvent yellowButtonChanged ifFalse: [ ^ self ].
 	

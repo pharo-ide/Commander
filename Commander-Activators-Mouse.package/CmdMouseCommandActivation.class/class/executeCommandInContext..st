@@ -2,4 +2,6 @@ command execition
 executeCommandInContext: aToolContext
 
 	self activateAllInContext: aToolContext by: [:activator | 
-		^activator executeCommand ]
+		activator executeCommand.
+		^true ].
+	^false

@@ -1,6 +1,6 @@
 {
-	"commentStamp" : "DenisKudryashov 10/2/2017 10:57",
-	"super" : "CmdMenuCommandActivationStrategy",
+	"commentStamp" : "",
+	"super" : "CmdContextMenuActivation",
 	"category" : "Commander-Activators-ContextMenu",
 	"classinstvars" : [ ],
 	"pools" : [ ],
