@@ -2,4 +2,4 @@ activation
 dragAndDropActivation
 	<classAnnotation>
 	
-   ^CmdDragAndDropCommandActivation for: CmdContactBookPresenter toDropIn: CmdContactBookPresenter
+   ^CmdDragAndDropActivation for: CmdContactBookPresenter toDropIn: CmdContactBookPresenter

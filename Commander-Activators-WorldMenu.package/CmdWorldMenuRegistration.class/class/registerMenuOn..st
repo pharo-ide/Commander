@@ -2,5 +2,5 @@ world menu
 registerMenuOn: aBuilder 
 	<worldMenu>
 
-	CmdContextMenuCommandActivation
+	CmdContextMenuActivation
 		registerContextMenuOn: aBuilder inContext: self createCommandContext

@@ -1,3 +1,3 @@
 execution
 activationStrategy
-	^CmdContextMenuCommandActivation 
+	^CmdContextMenuActivation 
