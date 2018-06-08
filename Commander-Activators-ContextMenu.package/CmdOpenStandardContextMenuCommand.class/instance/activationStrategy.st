@@ -1,0 +1,3 @@
+execution
+activationStrategy
+	^CmdContextMenuActivation 
