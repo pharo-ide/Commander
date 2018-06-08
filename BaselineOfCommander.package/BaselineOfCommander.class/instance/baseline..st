@@ -5,7 +5,7 @@ baseline: spec
 		spec
 			baseline: #ClassAnnotation with: [ 
 				spec 
-					repository: 'github://pharo-ide/ClassAnnotation:v0.3.x';
+					repository: 'github://pharo-ide/ClassAnnotation:v0.3.1';
 					loads: 'Core' ];
 			project: #ClassAnnotationTests copyFrom: #ClassAnnotation with: [
 				spec loads: 'Tests'];
