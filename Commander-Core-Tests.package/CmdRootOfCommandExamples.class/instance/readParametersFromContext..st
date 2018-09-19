@@ -1,3 +1,0 @@
-execution
-readParametersFromContext: aToolContext
-	savedParametersContext := aToolContext

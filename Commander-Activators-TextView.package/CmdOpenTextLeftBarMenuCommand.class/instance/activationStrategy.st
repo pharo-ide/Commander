@@ -1,3 +1,0 @@
-execution
-activationStrategy
-	^CmdTextLeftBarMenuActivation 

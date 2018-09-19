@@ -1,3 +1,0 @@
-updating
-synchronizeContentWith: anotherMenuItem
-	self subclassResponsibility 

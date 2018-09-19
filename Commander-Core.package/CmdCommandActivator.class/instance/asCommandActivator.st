@@ -1,3 +1,0 @@
-converting
-asCommandActivator
-	^self

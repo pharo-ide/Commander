@@ -1,3 +1,0 @@
-testing
-isContactBookSelected
-	^true

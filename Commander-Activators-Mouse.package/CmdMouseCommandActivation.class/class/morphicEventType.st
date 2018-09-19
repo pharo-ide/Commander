@@ -1,3 +1,0 @@
-morphs setup
-morphicEventType
-	self subclassResponsibility 

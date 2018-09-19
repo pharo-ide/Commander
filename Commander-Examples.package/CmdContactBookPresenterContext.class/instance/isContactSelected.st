@@ -1,3 +1,0 @@
-testing
-isContactSelected
-	^selectedContacts notEmpty

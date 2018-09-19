@@ -1,3 +1,0 @@
-accessing
-commandProvider: someObjectWithCommandContext
-	commandProvider := someObjectWithCommandContext

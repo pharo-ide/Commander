@@ -1,3 +1,0 @@
-deprecation
-new
-	^CmdDragAndDropActivation new

@@ -1,4 +1,0 @@
-*Commander-Activators-Mouse
-enableMouseCommands: aMouseActivationClass withContextFrom: someObjectWithCommandContext
-
-	aMouseActivationClass enableInMorph: self withCommandsFrom: someObjectWithCommandContext

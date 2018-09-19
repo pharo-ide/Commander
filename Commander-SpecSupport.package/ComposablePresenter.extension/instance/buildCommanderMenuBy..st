@@ -1,4 +1,0 @@
-*Commander-SpecSupport
-buildCommanderMenuBy: aMenuCommandActivationClass
-
-	^aMenuCommandActivationClass buildContextMenuFor: self inContext: self createCommandContext

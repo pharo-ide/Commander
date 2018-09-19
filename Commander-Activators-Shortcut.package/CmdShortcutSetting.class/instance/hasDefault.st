@@ -1,4 +1,0 @@
-accessing
-hasDefault
-
-	^shortcutActivation isRedefined
