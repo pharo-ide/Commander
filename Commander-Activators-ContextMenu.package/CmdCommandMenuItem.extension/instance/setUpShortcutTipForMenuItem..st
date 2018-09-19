@@ -1,4 +1,0 @@
-*Commander-Activators-ContextMenu
-setUpShortcutTipForMenuItem: aMenuItemMorph
-
-	activator setUpShortcutTipForMenuItem: aMenuItemMorph

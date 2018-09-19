@@ -1,3 +1,0 @@
-accessing
-selectedContactBook
-	^ tool contactBook

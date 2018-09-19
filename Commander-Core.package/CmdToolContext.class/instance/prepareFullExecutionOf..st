@@ -1,3 +1,0 @@
-command execution
-prepareFullExecutionOf: aCommand
-	aCommand prepareFullExecutionInContext: self

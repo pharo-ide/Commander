@@ -1,1 +1,0 @@
-I represent activation of commands using mouse click event

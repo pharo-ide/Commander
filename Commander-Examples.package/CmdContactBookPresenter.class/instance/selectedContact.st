@@ -1,3 +1,0 @@
-accessing
-selectedContact
-	^table selectedItem

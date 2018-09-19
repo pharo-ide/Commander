@@ -1,2 +1,0 @@
-command execution
-prepareNewCommand: aCommand

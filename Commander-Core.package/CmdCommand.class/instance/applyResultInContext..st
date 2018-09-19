@@ -1,2 +1,0 @@
-execution
-applyResultInContext: aToolContext

@@ -1,3 +1,0 @@
-accessing
-order
-	^activator menuItemOrder

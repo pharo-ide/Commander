@@ -1,3 +1,0 @@
-accessing
-command
-	^ activator command

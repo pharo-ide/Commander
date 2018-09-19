@@ -1,3 +1,0 @@
-testing
-isCommandItem
-	^self subclassResponsibility 

@@ -1,4 +1,0 @@
-testing
-canBeDroppedInContext: aToolContext
-
-	^commandPassenger canBeDroppedInContext: aToolContext

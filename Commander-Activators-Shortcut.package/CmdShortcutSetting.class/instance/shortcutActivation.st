@@ -1,3 +1,0 @@
-accessing
-shortcutActivation
-	^ shortcutActivation

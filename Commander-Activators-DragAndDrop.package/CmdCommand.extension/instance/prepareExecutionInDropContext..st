@@ -1,2 +1,0 @@
-*Commander-Activators-DragAndDrop
-prepareExecutionInDropContext: aToolContext

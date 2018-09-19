@@ -1,3 +1,0 @@
-execution
-executeCommand
-	activator executeCommand

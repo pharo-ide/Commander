@@ -1,4 +1,0 @@
-*Commander-Activators-ContextMenu
-registerContextMenuItemsWithBuilder: aBuilder
-
-	rootGroup registerContextMenuItemsWithBuilder: aBuilder

@@ -1,3 +1,0 @@
-execution
-execute
-	CmdContactBookPresenter familyExample

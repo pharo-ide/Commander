@@ -1,3 +1,0 @@
-context
-createCommandContext
-	^self createCommandContextForSelection: table selectedItems
