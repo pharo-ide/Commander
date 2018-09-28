@@ -23,6 +23,6 @@ CmdCommandActivator >> setUpShortcutTipForMenuItem: aMenuItemMorph [
 	CmdShortcutActivation 
 		activeInstancesFor: command class inContext: context
 		do: [ :shortcut |  	
-			keyText := shortcut keyCombination printString copyReplaceAll: 'Meta' with: OSPlatform current defaultModifier name.
+			keyText := shortcut keyCombination printString copyReplaceAll: KMModifier meta name with: OSPlatform current defaultModifier name.
 			aMenuItemMorph keyText: keyText]
 ]
