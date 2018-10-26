@@ -1,7 +1,7 @@
 Class {
 	#name : #CmdDragAndDropCommandActivation,
 	#superclass : #CmdDragAndDropActivation,
-	#category : #'Commander-Activators-DragAndDrop'
+	#category : #'Commander-Deprecated'
 }
 
 { #category : #deprecation }

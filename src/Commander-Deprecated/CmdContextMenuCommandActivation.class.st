@@ -1,7 +1,7 @@
 Class {
 	#name : #CmdContextMenuCommandActivation,
 	#superclass : #CmdContextMenuActivation,
-	#category : #'Commander-Activators-ContextMenu'
+	#category : #'Commander-Deprecated'
 }
 
 { #category : #deprecation }

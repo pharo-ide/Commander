@@ -35,10 +35,12 @@ BaselineOfCommander >> baseline: spec [
 			
 			package: #'Commander-SpecSupport';
 			package: #'Commander-Examples' with: [
-				spec requires: #(#'Commander-SpecSupport')].
+				spec requires: #(#'Commander-SpecSupport')];
+			package: #'Commander-Deprecated' with: [
+				spec requires: #(#'Commander-Activators-ContextMenu' #'Commander-Activators-Shortcut' #'Commander-Activators-DragAndDrop')].
 		spec 
 			group: 'Core' with: #(#'Commander-Core');
-			group: 'AllActivators' with: #(#'Commander-Activators-Shortcut' #'Commander-Activators-ContextMenu' #'Commander-Activators-DragAndDrop' #'Commander-Activators-WorldMenu' #'Commander-Activators-TextView' #'Commander-Activators-Mouse');
+			group: 'AllActivators' with: #(#'Commander-Activators-Shortcut' #'Commander-Activators-ContextMenu' #'Commander-Activators-DragAndDrop' #'Commander-Activators-WorldMenu' #'Commander-Activators-TextView' #'Commander-Activators-Mouse' #'Commander-Deprecated');
 			group: 'Tests' with: #(#'Commander-Core-Tests' );
 			group: 'default' with: #('Core' 'AllActivators' 'Tests')].
 		

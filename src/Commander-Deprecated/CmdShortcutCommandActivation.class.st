@@ -1,7 +1,7 @@
 Class {
 	#name : #CmdShortcutCommandActivation,
 	#superclass : #CmdShortcutActivation,
-	#category : #'Commander-Activators-Shortcut'
+	#category : #'Commander-Deprecated'
 }
 
 { #category : #deprecation }
