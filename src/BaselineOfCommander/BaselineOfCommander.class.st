@@ -11,7 +11,7 @@ BaselineOfCommander >> baseline: spec [
 		spec
 			baseline: #ClassAnnotation with: [ 
 				spec 
-					repository: 'github://pharo-ide/ClassAnnotation:v0.4.0/src';
+					repository: 'github://pharo-ide/ClassAnnotation:v0.4.x/src';
 					loads: 'Core' ];
 			project: #ClassAnnotationTests copyFrom: #ClassAnnotation with: [
 				spec loads: 'Tests'];
