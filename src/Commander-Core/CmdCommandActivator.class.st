@@ -128,7 +128,7 @@ CmdCommandActivator >> executeCommand [
 	[self prepareCommandForExecution.
 	context executeCommand: command by: self.
 	self applyCommandResult] 
-		on: CmdCommandAborted do: [ :exc |  ]
+		on: Exception do: [ :exc | self processCommandFailure: exc ]
 ]
 
 { #category : #testing }
@@ -174,4 +174,10 @@ CmdCommandActivator >> printOn: aStream [
 	aStream nextPut: $(.
 	command printOn: aStream.
 	aStream nextPut: $).
+]
+
+{ #category : #execution }
+CmdCommandActivator >> processCommandFailure: anException [
+	
+	context processFailure: anException of: command
 ]
