@@ -82,6 +82,11 @@ CmdToolContext >> prepareNewCommand: aCommand [
 	aCommand readParametersFromContext: self
 ]
 
+{ #category : #'command execution' }
+CmdToolContext >> processFailure: anException of: aCommand [
+	anException notifyUserOfCommand: aCommand
+]
+
 { #category : #accessing }
 CmdToolContext >> tool [
 	^ tool

@@ -7,3 +7,7 @@ Class {
 	#superclass : #Error,
 	#category : #'Commander-Core'
 }
+
+{ #category : #notification }
+CmdCommandAborted >> notifyUserOfCommand: aCommand [
+]
