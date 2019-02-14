@@ -146,7 +146,7 @@ CmdCommand >> defaultMenuIcon [
 	but it is already expected by many tools.	So it is easy to allow nil.
 	For simple cases users should implement class side method #defaultMenuIconName"
 	^self defaultMenuIconName ifNotNil: [ :iconName | 
-		Smalltalk ui iconNamed: iconName ]
+		self iconNamed: iconName ]
 ]
 
 { #category : #accessing }
@@ -182,6 +182,11 @@ CmdCommand >> execute [
 	self subclassResponsibility 
 ]
 
+{ #category : #accessing }
+CmdCommand >> iconNamed: iconName [
+	^ Smalltalk ui iconNamed: iconName
+]
+
 { #category : #execution }
 CmdCommand >> prepareFullExecutionInContext: aToolContext [
 ]
@@ -196,5 +201,5 @@ CmdCommand >> secureMenuIcon [
 	users should call this method. It ensure Form instance 
 	which will indicate missing icon as a problem"
 	
-	^self defaultMenuIcon ifNil: [ Smalltalk ui iconNamed: #error ]
+	^self defaultMenuIcon ifNil: [ self iconNamed: #error ]
 ]
