@@ -18,6 +18,11 @@ Class {
 	#category : #'Commander-Activators-ContextMenu'
 }
 
+{ #category : #testing }
+CmdOpenContextMenuCommand class >> isAbstract [
+	^self = CmdOpenContextMenuCommand 
+]
+
 { #category : #execution }
 CmdOpenContextMenuCommand >> activationStrategy [
 	"Subclasses should return specific kind of activation strategy
