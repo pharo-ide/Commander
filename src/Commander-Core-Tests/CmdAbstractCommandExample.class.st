@@ -10,3 +10,8 @@ CmdAbstractCommandExample class >> activationExample1 [
 	
 	^CmdCommandActivationExample for: CmdToolContextStub1
 ]
+
+{ #category : #testing }
+CmdAbstractCommandExample class >> isAbstract [
+	^self = CmdAbstractCommandExample 
+]
