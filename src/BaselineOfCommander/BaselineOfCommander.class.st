@@ -34,13 +34,15 @@ BaselineOfCommander >> baseline: spec [
 				spec requires: #(#'Commander-Activators-ContextMenu' #'Commander-Activators-Mouse')];
 			
 			package: #'Commander-SpecSupport';
+			package: #'Commander-Spec2-Compatibility';
 			package: #'Commander-Examples' with: [
 				spec requires: #(#'Commander-SpecSupport')].
 		spec 
 			group: 'Core' with: #(#'Commander-Core');
 			group: 'AllActivators' with: #(#'Commander-Activators-Shortcut' #'Commander-Activators-ContextMenu' #'Commander-Activators-DragAndDrop' #'Commander-Activators-WorldMenu' #'Commander-Activators-TextView' #'Commander-Activators-Mouse');
 			group: 'Tests' with: #(#'Commander-Core-Tests' );
-			group: 'default' with: #('Core' 'AllActivators' 'Tests')].
+			group: 'default' with: #('Core' 'AllActivators' 'Tests')];
+			group: 'withSpec2Compatibility' with: #('default' 'Commander-Spec2-Compatibility').
 		
 		spec for: #'pharo6.x' do: [    
         self spec70: spec.        
