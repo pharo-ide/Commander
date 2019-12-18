@@ -23,9 +23,6 @@ CmdCommandActivator >> setUpShortcutTipForMenuItem: aMenuItemMorph [
 	CmdShortcutActivation 
 		activeInstancesFor: command class inContext: context
 		do: [ :shortcut |  	
-			"this is trick to show shortcut on menu with existing menu support"
-			keyText := String streamContents: [:s | 
-				shortcut keyCombination prettyPrintOn: s].
-			keyText := keyText copyWithout: keyText first.
+			keyText := shortcut keyCombination printString copyReplaceAll: KMModifier meta name with: OSPlatform current defaultModifier name.
 			aMenuItemMorph keyText: keyText]
 ]
